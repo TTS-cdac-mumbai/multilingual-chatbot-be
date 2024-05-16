@@ -1,0 +1,1156 @@
+version: "3.1"
+
+stories:
+
+# - story: fallback
+#   steps:
+#   - intent: bot_challenge
+#   - action: action_default_fallback
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: path 1
+  steps:
+  - intent: m_mobile_seva
+  - action: utter_mobile_seva_m
+  
+- story: path 2
+  steps:
+  - intent: m_registration
+  - action: utter_registration_m
+
+- story: path 3
+  steps:
+  - intent: m_push_sms
+  - action: utter_push_sms_m
+
+- story: path 4
+  steps:
+  - intent: m_pull_sms
+  - action: utter_pull_sms_m
+
+- story: path 5
+  steps:
+  - intent: m_ivrs
+  - action: utter_ivrs_m
+
+- story: path 6
+  steps:
+  - intent: m_ussd
+  - action: utter_ussd_m
+
+- story: path 7
+  steps:
+  - intent: m_m_appstore
+  - action: utter_m_appstore_m
+
+- story: path 8
+  steps:
+  - intent: m_user_manual
+  - action: utter_user_manual_m
+
+- story: path 9
+  steps:
+  - intent: m_tri_exemption
+  - action: utter_tri_exemption_m
+
+- story: path 10
+  steps:
+  - intent: m_agreement_duration
+  - action: utter_agreement_duration_m
+
+- story: path 11
+  steps:
+  - intent: m_sms_rate
+  - action: utter_sms_rate_m
+
+- story: path 12
+  steps:
+  - intent: m_short_code
+  - action: utter_short_code_m
+
+- story: path 13
+  steps:
+  - intent: m_long_code
+  - action: utter_long_code_m
+
+- story: path 14
+  steps:
+  - intent: m_long_short_numbers
+  - action: utter_long_short_numbers_m
+
+- story: path 15
+  steps:
+  - intent: m_sms_limit
+  - action: utter_sms_limit_m
+
+- story: path 16
+  steps:
+  - intent: m_threshold_balance
+  - action: utter_threshold_balance_m
+
+- story: path 17
+  steps:
+  - intent: m_various_sms
+  - action: utter_various_sms_m
+
+- story: path 18
+  steps:
+  - intent: m_group
+  - action: utter_group_m
+
+- story: path 19
+  steps:
+  - intent: m_secure_key
+  - action: utter_secure_key_m
+
+- story: path 20
+  steps:
+  - intent: m_ssl_error
+  - action: utter_ssl_error_m
+
+- story: path 21
+  steps:
+  - intent: m_performa_invoice
+  - action: utter_performa_invoice_m
+
+- story: path 22
+  steps:
+  - intent: m_utilization_report
+  - action: utter_utilization_report_m
+
+- story: path 23
+  steps:
+  - intent: m_balance_transfer
+  - action: utter_balance_transfer_m
+
+- story: path 24
+  steps:
+  - intent: m_sender_id
+  - action: utter_sender_id_m
+
+- story: path 25
+  steps:
+  - intent: m_payment_receipt
+  - action: utter_payment_receipt_m
+
+- story: path 26
+  steps:
+  - intent: m_connection_time_out
+  - action: utter_connection_time_out_m
+
+- story: path 27
+  steps:
+  - intent: m_ip_white_list
+  - action: utter_ip_white_list_m
+
+- story: path 28
+  steps:
+  - intent: m_data_upload_fail
+  - action: utter_data_upload_fail_m
+
+- story: path 29
+  steps:
+  - intent: m_sms_length
+  - action: utter_sms_length_m
+
+- story: path 30
+  steps:
+  - intent: m_login_fail
+  - action: utter_login_fail_m
+
+- story: path 31
+  steps:
+  - intent: m_access_fail
+  - action: utter_access_fail_m
+
+- story: path 32
+  steps:
+  - intent: m_pull_sms_error
+  - action: utter_pull_sms_error_m
+  
+- story: path 33
+  steps:
+  - intent: h_mobile_seva
+  - action: utter_mobile_seva_h
+  
+- story: path 34
+  steps:
+  - intent: h_registration
+  - action: utter_registration_h
+
+- story: path 35
+  steps:
+  - intent: h_push_sms
+  - action: utter_push_sms_h
+
+- story: path 36
+  steps:
+  - intent: h_pull_sms
+  - action: utter_pull_sms_h
+
+- story: path 37
+  steps:
+  - intent: h_ivrs
+  - action: utter_ivrs_h
+
+- story: path 38
+  steps:
+  - intent: h_ussd
+  - action: utter_ussd_h
+
+- story: path 39
+  steps:
+  - intent: h_m_appstore
+  - action: utter_m_appstore_h
+
+- story: path 40
+  steps:
+  - intent: h_user_manual
+  - action: utter_user_manual_h
+
+- story: path 41
+  steps:
+  - intent: h_tri_exemption
+  - action: utter_tri_exemption_h
+
+- story: path 42
+  steps:
+  - intent: h_agreement_duration
+  - action: utter_agreement_duration_h
+
+- story: path 43
+  steps:
+  - intent: h_sms_rate
+  - action: utter_sms_rate_h
+
+- story: path 44
+  steps:
+  - intent: h_short_code
+  - action: utter_short_code_h
+
+- story: path 45
+  steps:
+  - intent: h_long_code
+  - action: utter_long_code_h
+
+- story: path 46
+  steps:
+  - intent: h_long_short_numbers
+  - action: utter_long_short_numbers_h
+
+- story: path 47
+  steps:
+  - intent: h_sms_limit
+  - action: utter_sms_limit_h
+
+- story: path 48
+  steps:
+  - intent: h_threshold_balance
+  - action: utter_threshold_balance_h
+
+- story: path 49
+  steps:
+  - intent: h_various_sms
+  - action: utter_various_sms_h
+
+- story: path 50
+  steps:
+  - intent: h_group
+  - action: utter_group_h
+
+- story: path 51
+  steps:
+  - intent: h_secure_key
+  - action: utter_secure_key_h
+
+- story: path 52
+  steps:
+  - intent: h_ssl_error
+  - action: utter_ssl_error_h
+
+- story: path 53
+  steps:
+  - intent: h_performa_invoice
+  - action: utter_performa_invoice_h
+
+- story: path 54
+  steps:
+  - intent: h_utilization_report
+  - action: utter_utilization_report_h
+
+- story: path 55
+  steps:
+  - intent: h_balance_transfer
+  - action: utter_balance_transfer_h
+
+- story: path 56
+  steps:
+  - intent: h_sender_id
+  - action: utter_sender_id_h
+
+- story: path 57
+  steps:
+  - intent: h_payment_receipt
+  - action: utter_payment_receipt_h
+
+- story: path 58
+  steps:
+  - intent: h_connection_time_out
+  - action: utter_connection_time_out_h
+
+- story: path 59
+  steps:
+  - intent: h_ip_white_list
+  - action: utter_ip_white_list_h
+
+- story: path 60
+  steps:
+  - intent: h_data_upload_fail
+  - action: utter_data_upload_fail_h
+
+- story: path 61
+  steps:
+  - intent: h_sms_length
+  - action: utter_sms_length_h
+
+- story: path 62
+  steps:
+  - intent: h_login_fail
+  - action: utter_login_fail_h
+
+- story: path 63
+  steps:
+  - intent: h_access_fail
+  - action: utter_access_fail_h
+
+- story: path 64
+  steps:
+  - intent: h_pull_sms_error
+  - action: utter_pull_sms_error_h
+  
+- story: path 65
+  steps:
+  - intent: e_mobile_seva
+  - action: utter_mobile_seva_e
+  
+- story: path 66
+  steps:
+  - intent: e_registration
+  - action: utter_registration_e
+
+- story: path 67
+  steps:
+  - intent: e_push_sms
+  - action: utter_push_sms_e
+
+- story: path 68
+  steps:
+  - intent: e_pull_sms
+  - action: utter_pull_sms_e
+
+- story: path 69
+  steps:
+  - intent: e_ivrs
+  - action: utter_ivrs_e
+
+- story: path 70
+  steps:
+  - intent: e_ussd
+  - action: utter_ussd_e
+
+- story: path 71
+  steps:
+  - intent: e_m_appstore
+  - action: utter_m_appstore_e
+
+- story: path 72
+  steps:
+  - intent: e_user_manual
+  - action: utter_user_manual_e
+
+- story: path 73
+  steps:
+  - intent: e_tri_exemption
+  - action: utter_tri_exemption_e
+
+- story: path 74
+  steps:
+  - intent: e_agreement_duration
+  - action: utter_agreement_duration_e
+
+- story: path 75
+  steps:
+  - intent: e_sms_rate
+  - action: utter_sms_rate_e
+
+- story: path 76
+  steps:
+  - intent: e_short_code
+  - action: utter_short_code_e
+
+- story: path 77
+  steps:
+  - intent: e_long_code
+  - action: utter_long_code_e
+
+- story: path 78
+  steps:
+  - intent: e_long_short_numbers
+  - action: utter_long_short_numbers_e
+
+- story: path 79
+  steps:
+  - intent: e_sms_limit
+  - action: utter_sms_limit_e
+
+- story: path 80
+  steps:
+  - intent: e_threshold_balance
+  - action: utter_threshold_balance_e
+
+- story: path 81
+  steps:
+  - intent: e_various_sms
+  - action: utter_various_sms_e
+
+- story: path 82
+  steps:
+  - intent: e_group
+  - action: utter_group_e
+
+- story: path 83
+  steps:
+  - intent: e_secure_key
+  - action: utter_secure_key_e
+
+- story: path 84
+  steps:
+  - intent: e_ssl_error
+  - action: utter_ssl_error_e
+
+- story: path 85
+  steps:
+  - intent: e_performa_invoice
+  - action: utter_performa_invoice_e
+
+- story: path 86
+  steps:
+  - intent: e_utilization_report
+  - action: utter_utilization_report_e
+
+- story: path 87
+  steps:
+  - intent: e_balance_transfer
+  - action: utter_balance_transfer_e
+
+- story: path 88
+  steps:
+  - intent: e_sender_id
+  - action: utter_sender_id_e
+
+- story: path 89
+  steps:
+  - intent: e_payment_receipt
+  - action: utter_payment_receipt_e
+
+- story: path 90
+  steps:
+  - intent: e_connection_time_out
+  - action: utter_connection_time_out_e
+
+- story: path 91
+  steps:
+  - intent: e_ip_white_list
+  - action: utter_ip_white_list_e
+
+- story: path 92
+  steps:
+  - intent: e_data_upload_fail
+  - action: utter_data_upload_fail_e
+
+- story: path 93
+  steps:
+  - intent: e_sms_length
+  - action: utter_sms_length_e
+
+- story: path 94
+  steps:
+  - intent: e_login_fail
+  - action: utter_login_fail_e
+
+- story: path 95
+  steps:
+  - intent: e_access_fail
+  - action: utter_access_fail_e
+
+- story: path 96
+  steps:
+  - intent: e_pull_sms_error
+  - action: utter_pull_sms_error_e
+  
+- story: path 97
+  steps:
+  - intent: g_mobile_seva
+  - action: utter_mobile_seva_g
+  
+- story: path 98
+  steps:
+  - intent: g_registration
+  - action: utter_registration_g
+
+- story: path 99
+  steps:
+  - intent: g_push_sms
+  - action: utter_push_sms_g
+
+- story: path 100
+  steps:
+  - intent: g_pull_sms
+  - action: utter_pull_sms_g
+
+- story: path 101
+  steps:
+  - intent: g_ivrs
+  - action: utter_ivrs_g
+
+- story: path 102
+  steps:
+  - intent: g_ussd
+  - action: utter_ussd_g
+
+- story: path 103
+  steps:
+  - intent: g_m_appstore
+  - action: utter_m_appstore_g
+
+- story: path 104
+  steps:
+  - intent: g_user_manual
+  - action: utter_user_manual_g
+
+- story: path 105
+  steps:
+  - intent: g_tri_exemption
+  - action: utter_tri_exemption_g
+
+- story: path 106
+  steps:
+  - intent: g_agreement_duration
+  - action: utter_agreement_duration_g
+
+- story: path 107
+  steps:
+  - intent: g_sms_rate
+  - action: utter_sms_rate_g
+
+- story: path 108
+  steps:
+  - intent: g_short_code
+  - action: utter_short_code_g
+
+- story: path 109
+  steps:
+  - intent: g_long_code
+  - action: utter_long_code_g
+
+- story: path 110
+  steps:
+  - intent: g_long_short_numbers
+  - action: utter_long_short_numbers_g
+
+- story: path 111
+  steps:
+  - intent: g_sms_limit
+  - action: utter_sms_limit_g
+
+- story: path 112
+  steps:
+  - intent: g_threshold_balance
+  - action: utter_threshold_balance_g
+
+- story: path 113
+  steps:
+  - intent: g_various_sms
+  - action: utter_various_sms_g
+
+- story: path 114
+  steps:
+  - intent: g_group
+  - action: utter_group_g
+
+- story: path 115
+  steps:
+  - intent: g_secure_key
+  - action: utter_secure_key_g
+
+- story: path 116
+  steps:
+  - intent: g_ssl_error
+  - action: utter_ssl_error_g
+
+- story: path 117
+  steps:
+  - intent: g_performa_invoice
+  - action: utter_performa_invoice_g
+
+- story: path 118
+  steps:
+  - intent: g_utilization_report
+  - action: utter_utilization_report_g
+
+- story: path 119
+  steps:
+  - intent: g_balance_transfer
+  - action: utter_balance_transfer_g
+
+- story: path 120
+  steps:
+  - intent: g_sender_id
+  - action: utter_sender_id_g
+
+- story: path 121
+  steps:
+  - intent: g_payment_receipt
+  - action: utter_payment_receipt_g
+
+- story: path 122
+  steps:
+  - intent: g_connection_time_out
+  - action: utter_connection_time_out_g
+
+- story: path 123
+  steps:
+  - intent: g_ip_white_list
+  - action: utter_ip_white_list_g
+
+- story: path 124
+  steps:
+  - intent: g_data_upload_fail
+  - action: utter_data_upload_fail_g
+
+- story: path 125
+  steps:
+  - intent: g_sms_length
+  - action: utter_sms_length_g
+
+- story: path 126
+  steps:
+  - intent: g_login_fail
+  - action: utter_login_fail_g
+
+- story: path 127
+  steps:
+  - intent: g_access_fail
+  - action: utter_access_fail_g
+
+- story: path 128
+  steps:
+  - intent: g_pull_sms_error
+  - action: utter_pull_sms_error_g
+  
+- story: path 129
+  steps:
+  - intent: k_mobile_seva
+  - action: utter_mobile_seva_k
+  
+- story: path 130
+  steps:
+  - intent: k_registration
+  - action: utter_registration_k
+
+- story: path 131
+  steps:
+  - intent: k_push_sms
+  - action: utter_push_sms_k
+
+- story: path 132
+  steps:
+  - intent: k_pull_sms
+  - action: utter_pull_sms_k
+
+- story: path 133
+  steps:
+  - intent: k_ivrs
+  - action: utter_ivrs_k
+
+- story: path 134
+  steps:
+  - intent: k_ussd
+  - action: utter_ussd_k
+
+- story: path 135
+  steps:
+  - intent: k_m_appstore
+  - action: utter_m_appstore_k
+
+- story: path 136
+  steps:
+  - intent: k_user_manual
+  - action: utter_user_manual_k
+
+- story: path 137
+  steps:
+  - intent: k_tri_exemption
+  - action: utter_tri_exemption_k
+
+- story: path 138
+  steps:
+  - intent: k_agreement_duration
+  - action: utter_agreement_duration_k
+
+- story: path 139
+  steps:
+  - intent: k_sms_rate
+  - action: utter_sms_rate_k
+
+- story: path 140
+  steps:
+  - intent: k_short_code
+  - action: utter_short_code_k
+
+- story: path 141
+  steps:
+  - intent: k_long_code
+  - action: utter_long_code_k
+
+- story: path 142
+  steps:
+  - intent: k_long_short_numbers
+  - action: utter_long_short_numbers_k
+
+- story: path 143
+  steps:
+  - intent: k_sms_limit
+  - action: utter_sms_limit_k
+
+- story: path 144
+  steps:
+  - intent: k_threshold_balance
+  - action: utter_threshold_balance_k
+
+- story: path 145
+  steps:
+  - intent: k_various_sms
+  - action: utter_various_sms_k
+
+- story: path 146
+  steps:
+  - intent: k_group
+  - action: utter_group_k
+
+- story: path 147
+  steps:
+  - intent: k_secure_key
+  - action: utter_secure_key_k
+
+- story: path 148
+  steps:
+  - intent: k_ssl_error
+  - action: utter_ssl_error_k
+
+- story: path 149
+  steps:
+  - intent: k_performa_invoice
+  - action: utter_performa_invoice_k
+
+- story: path 150
+  steps:
+  - intent: k_utilization_report
+  - action: utter_utilization_report_k
+
+- story: path 151
+  steps:
+  - intent: k_balance_transfer
+  - action: utter_balance_transfer_k
+
+- story: path 152
+  steps:
+  - intent: k_sender_id
+  - action: utter_sender_id_k
+
+- story: path 153
+  steps:
+  - intent: k_payment_receipt
+  - action: utter_payment_receipt_k
+
+- story: path 154
+  steps:
+  - intent: k_connection_time_out
+  - action: utter_connection_time_out_k
+
+- story: path 155
+  steps:
+  - intent: k_ip_white_list
+  - action: utter_ip_white_list_k
+
+- story: path 156
+  steps:
+  - intent: k_data_upload_fail
+  - action: utter_data_upload_fail_k
+
+- story: path 157
+  steps:
+  - intent: k_sms_length
+  - action: utter_sms_length_k
+
+- story: path 158
+  steps:
+  - intent: k_login_fail
+  - action: utter_login_fail_k
+
+- story: path 159
+  steps:
+  - intent: k_access_fail
+  - action: utter_access_fail_k
+
+- story: path 160
+  steps:
+  - intent: k_pull_sms_error
+  - action: utter_pull_sms_error_k
+
+- story: path 161
+  steps:
+  - intent: ta_mobile_seva
+  - action: utter_mobile_seva_ta
+  
+- story: path 162
+  steps:
+  - intent: ta_registration
+  - action: utter_registration_ta
+
+- story: path 163
+  steps:
+  - intent: ta_push_sms
+  - action: utter_push_sms_ta
+
+- story: path 164
+  steps:
+  - intent: ta_pull_sms
+  - action: utter_pull_sms_ta
+
+- story: path 165
+  steps:
+  - intent: ta_ivrs
+  - action: utter_ivrs_ta
+
+- story: path 166
+  steps:
+  - intent: ta_ussd
+  - action: utter_ussd_ta
+
+- story: path 167
+  steps:
+  - intent: ta_m_appstore
+  - action: utter_m_appstore_ta
+
+- story: path 168
+  steps:
+  - intent: ta_user_manual
+  - action: utter_user_manual_ta
+
+- story: path 169
+  steps:
+  - intent: ta_tri_exemption
+  - action: utter_tri_exemption_ta
+
+- story: path 170
+  steps:
+  - intent: ta_agreement_duration
+  - action: utter_agreement_duration_ta
+
+- story: path 171
+  steps:
+  - intent: ta_sms_rate
+  - action: utter_sms_rate_ta
+
+- story: path 172
+  steps:
+  - intent: ta_short_code
+  - action: utter_short_code_ta
+
+- story: path 173
+  steps:
+  - intent: ta_long_code
+  - action: utter_long_code_ta
+
+- story: path 174
+  steps:
+  - intent: ta_long_short_numbers
+  - action: utter_long_short_numbers_ta
+
+- story: path 175
+  steps:
+  - intent: ta_sms_limit
+  - action: utter_sms_limit_ta
+
+- story: path 176
+  steps:
+  - intent: ta_threshold_balance
+  - action: utter_threshold_balance_ta
+
+- story: path 177
+  steps:
+  - intent: ta_various_sms
+  - action: utter_various_sms_ta
+
+- story: path 178
+  steps:
+  - intent: ta_group
+  - action: utter_group_ta
+
+- story: path 179
+  steps:
+  - intent: ta_secure_key
+  - action: utter_secure_key_ta
+
+- story: path 180
+  steps:
+  - intent: ta_ssl_error
+  - action: utter_ssl_error_ta
+
+- story: path 181
+  steps:
+  - intent: ta_performa_invoice
+  - action: utter_performa_invoice_ta
+
+- story: path 182
+  steps:
+  - intent: ta_utilization_report
+  - action: utter_utilization_report_ta
+
+- story: path 183
+  steps:
+  - intent: ta_balance_transfer
+  - action: utter_balance_transfer_ta
+
+- story: path 184
+  steps:
+  - intent: ta_sender_id
+  - action: utter_sender_id_ta
+
+- story: path 185
+  steps:
+  - intent: ta_payment_receipt
+  - action: utter_payment_receipt_ta
+
+- story: path 186
+  steps:
+  - intent: ta_connection_time_out
+  - action: utter_connection_time_out_ta
+
+- story: path 187
+  steps:
+  - intent: ta_ip_white_list
+  - action: utter_ip_white_list_ta
+
+- story: path 188
+  steps:
+  - intent: ta_data_upload_fail
+  - action: utter_data_upload_fail_ta
+
+- story: path 189
+  steps:
+  - intent: ta_sms_length
+  - action: utter_sms_length_ta
+
+- story: path 190
+  steps:
+  - intent: ta_login_fail
+  - action: utter_login_fail_ta
+
+- story: path 191
+  steps:
+  - intent: ta_access_fail
+  - action: utter_access_fail_ta
+
+- story: path 192
+  steps:
+  - intent: ta_pull_sms_error
+  - action: utter_pull_sms_error_ta
+
+- story: path 193
+  steps:
+  - intent: te_mobile_seva
+  - action: utter_mobile_seva_te
+  
+- story: path 194
+  steps:
+  - intent: te_registration
+  - action: utter_registration_te
+
+- story: path 195
+  steps:
+  - intent: te_push_sms
+  - action: utter_push_sms_te
+
+- story: path 196
+  steps:
+  - intent: te_pull_sms
+  - action: utter_pull_sms_te
+
+- story: path 197
+  steps:
+  - intent: te_ivrs
+  - action: utter_ivrs_te
+
+- story: path 198
+  steps:
+  - intent: te_ussd
+  - action: utter_ussd_te
+
+- story: path 199
+  steps:
+  - intent: te_m_appstore
+  - action: utter_m_appstore_te
+
+- story: path 200
+  steps:
+  - intent: te_user_manual
+  - action: utter_user_manual_te
+
+- story: path 201
+  steps:
+  - intent: te_tri_exemption
+  - action: utter_tri_exemption_te
+
+- story: path 202
+  steps:
+  - intent: te_agreement_duration
+  - action: utter_agreement_duration_te
+
+- story: path 203
+  steps:
+  - intent: te_sms_rate
+  - action: utter_sms_rate_te
+
+- story: path 204
+  steps:
+  - intent: te_short_code
+  - action: utter_short_code_te
+
+- story: path 205
+  steps:
+  - intent: te_long_code
+  - action: utter_long_code_te
+
+- story: path 206
+  steps:
+  - intent: te_long_short_numbers
+  - action: utter_long_short_numbers_te
+
+- story: path 207
+  steps:
+  - intent: te_sms_limit
+  - action: utter_sms_limit_te
+
+- story: path 208
+  steps:
+  - intent: te_threshold_balance
+  - action: utter_threshold_balance_te
+
+- story: path 209
+  steps:
+  - intent: te_various_sms
+  - action: utter_various_sms_te
+
+- story: path 210
+  steps:
+  - intent: te_group
+  - action: utter_group_te
+
+- story: path 211
+  steps:
+  - intent: te_secure_key
+  - action: utter_secure_key_te
+
+- story: path 212
+  steps:
+  - intent: te_ssl_error
+  - action: utter_ssl_error_te
+
+- story: path 213
+  steps:
+  - intent: te_performa_invoice
+  - action: utter_performa_invoice_te
+
+- story: path 214
+  steps:
+  - intent: te_utilization_report
+  - action: utter_utilization_report_te
+
+- story: path 215
+  steps:
+  - intent: te_balance_transfer
+  - action: utter_balance_transfer_te
+
+- story: path 216
+  steps:
+  - intent: te_sender_id
+  - action: utter_sender_id_te
+
+- story: path 217
+  steps:
+  - intent: te_payment_receipt
+  - action: utter_payment_receipt_te
+
+- story: path 218
+  steps:
+  - intent: te_connection_time_out
+  - action: utter_connection_time_out_te
+
+- story: path 219
+  steps:
+  - intent: te_ip_white_list
+  - action: utter_ip_white_list_te
+
+- story: path 220
+  steps:
+  - intent: te_data_upload_fail
+  - action: utter_data_upload_fail_te
+
+- story: path 221
+  steps:
+  - intent: te_sms_length
+  - action: utter_sms_length_te
+
+- story: path 222
+  steps:
+  - intent: te_login_fail
+  - action: utter_login_fail_te
+
+- story: path 223
+  steps:
+  - intent: te_access_fail
+  - action: utter_access_fail_te
+
+- story: path 224
+  steps:
+  - intent: te_pull_sms_error
+  - action: utter_pull_sms_error_te
+

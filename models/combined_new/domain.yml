@@ -1,0 +1,937 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - m_mobile_seva
+  - m_registration
+  - m_push_sms
+  - m_pull_sms
+  - m_ivrs
+  - m_ussd
+  - m_m_appstore
+  - m_user_manual
+  - m_tri_exemption
+  - m_agreement_duration
+  - m_sms_rate
+  - m_short_code
+  - m_long_code
+  - m_long_short_numbers
+  - m_sms_limit
+  - m_threshold_balance
+  - m_various_sms
+  - m_group
+  - m_secure_key
+  - m_ssl_error
+  - m_performa_invoice
+  - m_utilization_report
+  - m_balance_transfer
+  - m_sender_id
+  - m_payment_receipt
+  - m_connection_time_out
+  - m_ip_white_list
+  - m_data_upload_fail
+  - m_sms_length
+  - m_login_fail
+  - m_access_fail
+  - m_pull_sms_error
+  - h_mobile_seva
+  - h_registration
+  - h_push_sms
+  - h_pull_sms
+  - h_ivrs
+  - h_ussd
+  - h_m_appstore
+  - h_user_manual
+  - h_tri_exemption
+  - h_agreement_duration
+  - h_sms_rate
+  - h_short_code
+  - h_long_code
+  - h_long_short_numbers
+  - h_sms_limit
+  - h_threshold_balance
+  - h_various_sms
+  - h_group
+  - h_secure_key
+  - h_ssl_error
+  - h_performa_invoice
+  - h_utilization_report
+  - h_balance_transfer
+  - h_sender_id
+  - h_payment_receipt
+  - h_connection_time_out
+  - h_ip_white_list
+  - h_data_upload_fail
+  - h_sms_length
+  - h_login_fail
+  - h_access_fail
+  - h_pull_sms_error
+  - e_mobile_seva
+  - e_registration
+  - e_push_sms
+  - e_pull_sms
+  - e_ivrs
+  - e_ussd
+  - e_m_appstore
+  - e_user_manual
+  - e_tri_exemption
+  - e_agreement_duration
+  - e_sms_rate
+  - e_short_code
+  - e_long_code
+  - e_long_short_numbers
+  - e_sms_limit
+  - e_threshold_balance
+  - e_various_sms
+  - e_group
+  - e_secure_key
+  - e_ssl_error
+  - e_performa_invoice
+  - e_utilization_report
+  - e_balance_transfer
+  - e_sender_id
+  - e_payment_receipt
+  - e_connection_time_out
+  - e_ip_white_list
+  - e_data_upload_fail
+  - e_sms_length
+  - e_login_fail
+  - e_access_fail
+  - e_pull_sms_error
+  - g_mobile_seva
+  - g_registration
+  - g_push_sms
+  - g_pull_sms
+  - g_ivrs
+  - g_ussd
+  - g_m_appstore
+  - g_user_manual
+  - g_tri_exemption
+  - g_agreement_duration
+  - g_sms_rate
+  - g_short_code
+  - g_long_code
+  - g_long_short_numbers
+  - g_sms_limit
+  - g_threshold_balance
+  - g_various_sms
+  - g_group
+  - g_secure_key
+  - g_ssl_error
+  - g_performa_invoice
+  - g_utilization_report
+  - g_balance_transfer
+  - g_sender_id
+  - g_payment_receipt
+  - g_connection_time_out
+  - g_ip_white_list
+  - g_data_upload_fail
+  - g_sms_length
+  - g_login_fail
+  - g_access_fail
+  - g_pull_sms_error
+  - k_mobile_seva
+  - k_registration
+  - k_push_sms
+  - k_pull_sms
+  - k_ivrs
+  - k_ussd
+  - k_m_appstore
+  - k_user_manual
+  - k_tri_exemption
+  - k_agreement_duration
+  - k_sms_rate
+  - k_short_code
+  - k_long_code
+  - k_long_short_numbers
+  - k_sms_limit
+  - k_threshold_balance
+  - k_various_sms
+  - k_group
+  - k_secure_key
+  - k_ssl_error
+  - k_performa_invoice
+  - k_utilization_report
+  - k_balance_transfer
+  - k_sender_id
+  - k_payment_receipt
+  - k_connection_time_out
+  - k_ip_white_list
+  - k_data_upload_fail
+  - k_sms_length
+  - k_login_fail
+  - k_access_fail
+  - k_pull_sms_error
+  - ta_mobile_seva
+  - ta_registration
+  - ta_push_sms
+  - ta_pull_sms
+  - ta_ivrs
+  - ta_ussd
+  - ta_m_appstore
+  - ta_user_manual
+  - ta_tri_exemption
+  - ta_agreement_duration
+  - ta_sms_rate
+  - ta_short_code
+  - ta_long_code
+  - ta_long_short_numbers
+  - ta_sms_limit
+  - ta_threshold_balance
+  - ta_various_sms
+  - ta_group
+  - ta_secure_key
+  - ta_ssl_error
+  - ta_performa_invoice
+  - ta_utilization_report
+  - ta_balance_transfer
+  - ta_sender_id
+  - ta_payment_receipt
+  - ta_connection_time_out
+  - ta_ip_white_list
+  - ta_data_upload_fail
+  - ta_sms_length
+  - ta_login_fail
+  - ta_access_fail
+  - ta_pull_sms_error
+  - te_mobile_seva
+  - te_registration
+  - te_push_sms
+  - te_pull_sms
+  - te_ivrs
+  - te_ussd
+  - te_m_appstore
+  - te_user_manual
+  - te_tri_exemption
+  - te_agreement_duration
+  - te_sms_rate
+  - te_short_code
+  - te_long_code
+  - te_long_short_numbers
+  - te_sms_limit
+  - te_threshold_balance
+  - te_various_sms
+  - te_group
+  - te_secure_key
+  - te_ssl_error
+  - te_performa_invoice
+  - te_utilization_report
+  - te_balance_transfer
+  - te_sender_id
+  - te_payment_receipt
+  - te_connection_time_out
+  - te_ip_white_list
+  - te_data_upload_fail
+  - te_sms_length
+  - te_login_fail
+  - te_access_fail
+  - te_pull_sms_error
+  
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_mobile_seva_m:
+  - text: "मोबाईल सेवा किंवा ई एस एम एस सेवा हा मोबाईल गव्हर्नन्सवरील एक राष्ट्रीय उपक्रम आहे जो देशातील सरकारी विभाग आणि एजन्सींना एसएमएस, यु एस एस डी, आय वी आर एस आणि ऍप्स द्वारे विविध मोबाइल चॅनेलद्वारे इलेक्ट्रॉनिक सेवा प्रदान करण्यास सक्षम करतो."
+  
+  utter_registration_m:
+  - text: "नोंदणी करण्यासाठी http://services.mgov.gov.in/ वर युजर आयडी तयार करून खाते तयार करावे लागेल जे एम एस डी पी द्वारे मंजूर होईल आणि वापरकर्ता नोंदणीकृत होईल."
+  
+  utter_push_sms_m:
+  - text: "पुश एसएमएस सेवांचा वापर विभागांद्वारे नागरिकांना एसएमएसद्वारे माहिती, सूचना, अलर्ट इत्यादी पाठवण्यासाठी केला जातो."
+  
+  utter_pull_sms_m:
+  - text: "एसएमएस द्वारे उपलब्ध असलेल्या सरकारी सेवांमध्ये प्रवेश करण्यासाठी दूरसंचार विभाग, भारत सरकार द्वारे विभागीय सेवेची माहिती घेण्यासाठी नागरिकांकडून पुल एसएमएस सेवा वापरता येईल."
+  
+  utter_ivrs_m:
+  - text: "आय वी आर एस सेवा हे एक तंत्रज्ञान आहे जे कीपॅडद्वारे व्हॉइस आणि डी टी एम एफ टोन इनपुट वापरून संगणकाला मानवांशी संवाद साधण्याची परवानगी देते."
+  
+  utter_ussd_m:
+  - text: "यु एस एस डी ही एक सत्र आधारित सेवा आहे जी एसएमएसच्या विपरीत आहे जी स्टोअर आणि फॉरवर्ड सेवा आहे. यु एस एस डी सेवा दोन भिन्न सेवा वैशिष्ट्यांसह प्रदान केल्या जातात: यु एस एस एन, यु एस एस आर आणि अधिक तपशीलांसाठी कृपया लिंक तपासा: https://mgov.gov.in/msdp_ussddetail.jsp"
+  
+  utter_m_appstore_m:
+  - text: "एम ऍप स्टोअर सेवा जी मोबाइल ऍप्लिकेशन्स स्टोअर सेवा आहे, मोबाइल उपकरणांद्वारे सार्वजनिक सेवांच्या वितरणासाठी योग्य ऍप्लिकेशन्सचा विकास आणि तैनाती सुलभ करण्यासाठी तयार करण्यात आली आहे. स्टोअर हे शक्य तितके ओपन स्टँडर्ड्स वापरून सेवा देणारे आर्किटेक्चर आणि क्लाउड आधारित तंत्रज्ञानावर आधारित आहे."
+  
+  utter_user_manual_m:
+  - text: "युजर मॅन्युअलसाठी कृपया लिंक तपासा https://mgov.gov.in/msdp_services_usermanual.jsp एकत्रीकरण दस्तऐवजासाठी कृपया लिंक तपासा https://mgov.gov.in/msdp_services_usermanual.jsp"
+  
+  utter_tri_exemption_m:
+  - text: "कृपया आम्हाला तुमचा नोंदणीकृत ईमेल आणि वापरकर्ता आयडी पाठवा, आम्ही तुम्हाला त्यानुसार मेल करू."
+  
+  utter_agreement_duration_m:
+  - text: "कराराचा कालावधी त्यावर स्वाक्षरी केल्यापासून 2 वर्षांचा आहे."
+  
+  utter_sms_rate_m:
+  - text: "आम्ही तुम्हाला तुमचा प्रेषक आयडी आणि नोंदणीकृत ईमेल आयडी पाठवण्याची विनंती करतो, आम्ही तुम्हाला तपशील मेल करू. 30 दिवसांपूर्वी आम्ही तुम्हाला कोणत्याही दरातील बदलांबाबत मेलद्वारे सूचित करू."
+  
+  utter_short_code_m:
+  - text: "शॉर्ट कोड किंवा शॉर्ट नंबर्स हे लहान अंकी क्रम आहेत, जे टेलिफोन नंबर्सपेक्षा लक्षणीयपणे लहान आहेत जे मल्टीमीडिया मेसेजिंग सिस्टम आणि मोबाइल नेटवर्क ऑपरेटरच्या शॉर्ट मेसेज सर्व्हिस सिस्टममधील संदेशांना संबोधित करण्यासाठी वापरले जातात. मेसेजिंग व्यतिरिक्त, ते संक्षिप्त डायलिंगमध्ये वापरले जाऊ शकतात."
+
+  utter_long_code_m:
+  - text: "लाँग कोड एसएमएस सेवा ज्याला समर्पित फोन नंबर किंवा मोठा नंबर किंवा व्हर्च्युअल मोबाइल नंबर म्हणूनही ओळखले जाते ही रिसेप्शन यंत्रणा आहे जी व्यवसायाद्वारे व्हॉइस कॉल आणि एसएमएस संदेश प्राप्त करण्यासाठी वापरली जाते."
+    
+  utter_long_short_numbers_m:
+  - text: "लांब कोड क्रमांक 9223166166 आणि लघु कोड क्रमांक 166, 51969"
+  
+  utter_sms_limit_m:
+  - text: "एसएमएससाठी कोणतीही विशिष्ट दैनंदिन मर्यादा नाही, तथापि नोंदणीकृत युजरआयडीवर सुरुवातीला 100 एसएमएस दिले जातात जे https://services.mgov.gov.in वर लॉग इन करून पुढील चरणांनी वाढू शकतात आणि नंतर खाते व्यवस्थापित करण्यासाठी जा आणि खाते अद्यतनित करा. मग दैनिक एसएमएस मर्यादेवर जा आणि नंतर अपडेट करा"
+  
+  utter_threshold_balance_m:
+  - text: "जेव्हा खाते शिल्लक किमान ओलांडते तेव्हा सूचना प्राप्त करण्यासाठी थ्रेशोल्ड सूचना. मोबाइल सेवा किमान 10000 एसएमएसची सीमा प्रदान करते. ते वाढवण्यासाठी विभागाला msdp@cdac.in वर मेल करणे आवश्यक आहे."
+  
+  utter_various_sms_m:
+  - text: "पोर्टल वापरून तीन प्रकारचे एसएमएस पाठवता येतात: एखाद्या व्यक्तीला एसएमएस पाठवण्याची गरज असताना त्वरित एसएमएस. ग्रुप एस एम एस जेव्हा एस एम एस ग्रुपनिहाय पाठवायचा असतो. बल्क एस एम एस हा एसएमएस मोड एक्सेल फाईलद्वारे पाठविला जातो."
+  
+  utter_group_m:
+  - text: "प्रथम https://services.mgov.gov.in वर लॉग इन करा नंतर ग्रुप सेटिंग वर जा आणि मग ग्रुप जोडा मग ग्रुपचे नाव टाका आणि अॅड आयकॉनवर क्लिक करा."
+  
+  utter_secure_key_m:
+  - text: "सुरक्षित की सामान्यतः पासवर्ड किंवा अल्फान्यूमेरिक की संदर्भित करते जी अंतिम वापरकर्ते स्थानिक क्षेत्र नेटवर्कमध्ये प्रवेश करण्यासाठी प्रविष्ट करतात. एक सुरक्षा की विशिष्ट सुरक्षा प्रोटोकॉलसाठी एक संसाधन आहे जी स्थानिक नेटवर्क सुरक्षित करण्यात मदत करते. नेटवर्क सिक्युरिटी की नेटवर्क पत्ते निर्धारित करण्यासाठी वापरल्या जाणार्‍या इतर नेटवर्क की पेक्षा वेगळी आहे. जनरेशनसाठी https://services.mgov.gov.in वर लॉगिन करा, नंतर खाते व्यवस्थापित करा आणि की जनरेट करा. तुमच्या नोंदणीकृत मोबाईलवर एक ओटीपी पाठवला जाईल, तो प्रविष्ट करा आणि सबमिट वर क्लिक करा."
+  
+  utter_ssl_error_m:
+  - text: "तुम्ही एस एस एल सक्षम वेबसाइटशी कनेक्ट करण्याचा प्रयत्न करत असताना एस एस एल कनेक्शन त्रुटी उद्भवतात आणि विभाग वेबसाइटच्या सर्व्हरशी सुरक्षित कनेक्शन करू शकत नाही. दुरुस्तीसाठी, कृपया तुमच्या ऍप्लिकेशनमध्ये एस एस एल कोड लागू करा. नमुना किंवा चरणांसाठी कृपया https://mgov.gov.in/msdp_techarticle.jsp पहा"
+  
+  utter_performa_invoice_m:
+  - text: "https://services.mgov.gov.in वर परफॉर्मा इनव्हॉइस लॉगिन करण्यासाठी नंतर बिल तपशीलावर जा आणि https://services.mgov.gov.in/ येथे वार्षिक देखभाल खर्च लॉगिनसाठी परफॉर्मा व्युत्पन्न करा, नंतर बिल तपशीलावर जा आणि नंतर जनरेट करा ए एम सी अहवाल."
+  
+  utter_utilization_report_m:
+  - text: "वापर अहवाल किंवा वापर अहवाल संस्थांना त्यांच्या संसाधनांचा कसा, कुठे आणि किती वापर केला जातो याची माहिती देतो. https://services.mgov.gov.in वर लॉग इन करा आणि नंतर समरी रिपोर्टवर जा ज्या अंतर्गत तुम्हाला तुमचे सर्व एसएमएस वापर महिन्यानुसार आणि दिवसानुसार मिळतील. भविष्यातील संदर्भासाठी तुम्ही ते डाउनलोड देखील करू शकता."
+  
+  utter_balance_transfer_m:
+  - text: "एसएमएस शिल्लक हस्तांतरित करण्यासाठी कृपया पुढील चरणे करा: https://services.mgov.gov.in वर लॉग इन करा आणि नंतर खाते व्यवस्थापित करा नंतर शिल्लक हस्तांतरण करा ड्रॉप डाउन मेनूमधून उप खाते निवडा, संबंधित फील्ड भरा आणि हस्तांतरणावर क्लिक करा बटण"
+  
+  utter_sender_id_m:
+  - text: "प्रेषक आयडी विभागाद्वारे निवडला जातो. प्रेषक आयडी एसएमएस पाठवण्यासाठी वापरला जातो. प्रेषक आयडी 6 अक्षरांचा असणे आवश्यक आहे."
+  
+  utter_payment_receipt_m:
+  - text: "पेमेंट पावती व्युत्पन्न करण्यासाठी कृपया या चरणांचे अनुसरण करा: https://services.mgov.gov.in वर लॉग इन करा आणि नंतर बिल तपशीलावर जा, नंतर पेमेंट इतिहासावर जा आणि डाउनलोड बाणावर क्लिक करा. तुमची पेमेंट पावती डाउनलोड होईल."
+  
+  utter_connection_time_out_m:
+  - text: "झालेल्या गैरसोयीबद्दल आम्ही दिलगीर आहोत. आम्ही तुम्हाला तुमच्या सर्व्हरवरून आमच्या आय पी आणि पोर्टवर टेलनेट तपासण्याची विनंती करतो; कोड एसएसएल प्रमाणपत्र योग्यरित्या लागू केले आहे की नाही हे देखील तपासणे आवश्यक आहे."
+  
+  utter_ip_white_list_m:
+  - text: "झालेल्या गैरसोयीबद्दल आम्ही दिलगीर आहोत. आम्ही तुम्हाला तुमचा अर्ज सार्वजनिक आय पी पत्ता आमच्या ईमेल आयडी msdp@cdac.in वर पाठवण्याची विनंती करतो. आम्ही तुमच्याशी फोन आणि ईमेलद्वारे संपर्क करू."
+  
+  utter_data_upload_fail_m:
+  - text: "झालेल्या गैरसोयीबद्दल आम्ही दिलगीर आहोत. कृपया फाइल आकार, स्वरूप आणि एक्सेल फाइल तपासा. तसेच, फाइल अपलोड केल्यानंतर व्हॉईस कोड यशस्वीरित्या जनरेट झाला आहे हे तपासण्याची विनंती करतो."
+  
+  utter_sms_length_m:
+  - text: "इंग्रजीसाठी प्रति मजकूर एसएमएस लांबी 160 वर्ण आहे. इतर भाषांसाठी 70 वर्ण. अधिक तपशीलासाठी कृपया https://services.mgov.gov.in/smscalculator.jsp पहा"
+  
+  utter_login_fail_m:
+  - text: "झालेल्या गैरसोयीबद्दल आम्ही दिलगीर आहोत. आपण आम्हाला स्क्रीनशॉटसह msdp@cdac.in वर मेल करण्याची विनंती करतो. तुम्ही तुमचा पासवर्ड रीसेट देखील करू शकता. तसेच, कृपया आमचे पासवर्ड धोरण तपासा"
+  
+  utter_access_fail_m:
+  - text: "झालेल्या गैरसोयीबद्दल आम्ही दिलगीर आहोत. स्क्रीनशॉट आणि युआरएल तपशीलांसह आम्हाला msdp@cdac.in वर मेल करण्याची विनंती."
+  
+  utter_pull_sms_error_m:
+  - text: "झालेल्या गैरसोयीबद्दल आम्ही दिलगीर आहोत. कृपया तुमचा कीवर्ड, आयपी, पोर्ट तपशील msdp@cdac.in वर द्या. आम्ही तुम्हाला तपासू आणि अपडेट करू."
+
+  utter_mobile_seva_h:
+  - text: "मोबाइल सेवा या ई एसएमएस सेवा मोबाइल शासन पर एक राष्ट्रीय पहल है जो देश में सरकारी विभागों और एजेंसियों को विभिन्न मोबाइल चैनलों जैसे एसएमएस, यूएसएसडी, आईवीआर और ऐप के माध्यम से इलेक्ट्रॉनिक सेवाएं प्रदान करने में सक्षम बनाती है।"
+  
+  utter_registration_h:
+  - text: "रजिस्टर करने के लिए यूजर आईडी के साथ http://services.mgov.gov.in/ पर अकाउंट बनाने और अकाउंट बनाने की जरूरत होती है जिसे एमएसडीपी द्वारा मंजूरी मिल जाती है और यूजर रजिस्टर हो जाता है।"
+  
+  utter_push_sms_h:
+  - text: "पुश एसएमएस सेवाओं का उपयोग विभागों द्वारा एसएमएस के माध्यम से नागरिकों को सूचना, सूचनाएं, अलर्ट आदि भेजने के लिए किया जाता है।"
+  
+  utter_pull_sms_h:
+  - text: "पुल एसएमएस सेवाओं का उपयोग नागरिक द्वारा विभागों से विभागीय सेवा के बारे में जानकारी प्राप्त करने के लिए किया जा सकता है शॉर्ट कोड 166 या 51969 या 9223166166 को दूरसंचार विभाग, भारत सरकार द्वारा एसएमएस के माध्यम से उपलब्ध सरकारी सेवाओं तक पहुंचने के लिए आवंटित किया गया है।"
+  
+  utter_ivrs_h:
+  - text: "आईवीआरएस सेवा एक ऐसी तकनीक है जो कंप्यूटर को आवाज और डीटीएमएफ टोन इनपुट के माध्यम से कीपैड के माध्यम से मनुष्यों के साथ बातचीत करने की अनुमति देती है।"
+  
+  utter_ussd_h:
+  - text: "यूएसएसडी एक सत्र आधारित सेवा है जो एसएमएस के विपरीत है जो एक स्टोर और फॉरवर्ड सेवा है। यूएसएसडी सेवाएं दो अलग-अलग सेवा सुविधाओं के साथ प्रदान की जाती हैं: यूएसएसएन, यूएसएसआर और अधिक जानकारी के लिए कृपया लिंक देखें: https://mgov.gov.in/msdp ussddetail.jsp"
+  
+  utter_m_appstore_h:
+  - text: "एम ऐप स्टोर सेवा जो मोबाइल एप्लिकेशन स्टोर सेवा है, मोबाइल उपकरणों के माध्यम से सार्वजनिक सेवाओं के वितरण के लिए उपयुक्त अनुप्रयोगों के विकास और तैनाती की सुविधा के लिए बनाई गई है। स्टोर जहां तक ​​संभव हो खुले मानकों का उपयोग करते हुए सेवा उन्मुख वास्तुकला और क्लाउड आधारित प्रौद्योगिकियों पर आधारित है।"
+  
+  utter_user_manual_h:
+  - text: "उपयोगकर्ता पुस्तिका के लिए कृपया लिंक देखें https://mgov.gov.in/msdp_services usermanual.jsp एकीकरण दस्तावेज़ के लिए कृपया लिंक देखें https://mgov.gov.in/msdp_services usermanual.jsp"
+  
+  utter_tri_exemption_h:
+  - text: "कृपया हमें अपना पंजीकृत ईमेल आईडी और यूजर आईडी भेजें, हम आपको तदनुसार मेल करेंगे।"
+  
+  utter_agreement_duration_h:
+  - text: "समझौते की अवधि इस पर हस्ताक्षर करने की तारीख से 2 वर्ष के लिए है।"
+  
+  utter_sms_rate_h:
+  - text: "हम आपसे अनुरोध करते हैं कि आप हमें अपना प्रेषक आईडी और पंजीकृत ईमेल आईडी भेजें, हम आपको विवरण मेल करेंगे। 30 दिनों से पहले हम आपको किसी भी दर परिवर्तन के बारे में मेल के माध्यम से सूचित करेंगे।"
+  
+  utter_short_code_h:
+  - text: "शॉर्ट कोड, या शॉर्ट नंबर, शॉर्ट डिजिट सीक्वेंस होते हैं, जो टेलीफोन नंबरों की तुलना में काफी कम होते हैं, जिनका उपयोग मल्टीमीडिया मैसेजिंग सिस्टम और मोबाइल नेटवर्क ऑपरेटरों के शॉर्ट मैसेज सर्विस सिस्टम में संदेशों को संबोधित करने के लिए किया जाता है। संदेश भेजने के अलावा, उनका उपयोग संक्षिप्त डायलिंग में किया जा सकता है।"
+
+  utter_long_code_h:
+  - text: "लॉन्ग कोड एसएमएस सेवाओं को समर्पित फोन नंबर या बड़ी संख्या या वर्चुअल मोबाइल नंबर के रूप में भी जाना जाता है, जो वॉयस कॉल और एसएमएस संदेश प्राप्त करने के लिए व्यवसाय द्वारा उपयोग किया जाने वाला रिसेप्शन तंत्र है।"
+    
+  utter_long_short_numbers_h:
+  - text: "लॉन्ग कोड नंबर 9223166166 और शॉर्ट कोड नंबर 166, 51969"
+  
+  utter_sms_limit_h:
+  - text: "एसएमएस के लिए कोई विशिष्ट दैनिक सीमा नहीं है, हालांकि शुरू में पंजीकृत उपयोगकर्ता आईडी पर 100 एसएमएस आवंटित किए जाते हैं जो निम्नलिखित चरणों से बढ़ सकते हैं https://services.mgov.gov.in पर लॉगिन करें और फिर खाते का प्रबंधन करें और फिर खाते को अपडेट करें फिर डेली एसएमएस लिमिट में जाएं फिर अपडेट करें"
+  
+  utter_threshold_balance_h:
+  - text: "जब खाते की शेष राशि न्यूनतम से अधिक हो जाती है, तो सूचना प्राप्त करने के लिए थ्रेशोल्ड अलर्ट। मोबाइल सेवा 10000 एसएमएस की न्यूनतम सीमा प्रदान करती है। इसे बढ़ाने के लिए विभाग को msdp@cdac.in पर मेल करना होगा।"
+  
+  utter_various_sms_h:
+  - text: "कोई व्यक्ति पोर्टल का उपयोग करके 3 प्रकार के एसएमएस भेज सकता है: त्वरित एसएमएस जब किसी व्यक्ति को एसएमएस भेजने की आवश्यकता होती है। समूह एसएमएस जब एसएमएस को समूह के अनुसार भेजने की आवश्यकता होती है। बल्क एसएमएस एसएमएस का यह तरीका एक्सेल फाइल के जरिए भेजा जाता है।"
+  
+  utter_group_h:
+  - text: "सबसे पहले https://services.mgov.gov.in पर लॉग इन करें फिर ग्रुप सेटिंग में जाएं फिर ग्रुप जोड़ें फिर ग्रुप का नाम दर्ज करें और ऐड आइकन पर क्लिक करें।"
+  
+  utter_secure_key_h:
+  - text: "सुरक्षित कुंजी आमतौर पर पासवर्ड या अल्फ़ान्यूमेरिक कुंजी को संदर्भित करती है जो अंतिम उपयोगकर्ता स्थानीय क्षेत्र नेटवर्क तक पहुंचने के लिए दर्ज करते हैं। एक सुरक्षा कुंजी एक विशिष्ट सुरक्षा प्रोटोकॉल के लिए एक संसाधन है जो स्थानीय नेटवर्क को सुरक्षित करने में मदद करता है। नेटवर्क सुरक्षा कुंजी नेटवर्क पते निर्धारित करने के लिए उपयोग की जाने वाली अन्य नेटवर्क कुंजियों से भिन्न होती है। जेनरेशन के लिए https://services.mgov.gov.in पर लॉग इन करें, फिर अकाउंट मैनेज करें और फिर की जनरेट करें। आपके पंजीकृत मोबाइल पर एक ओटीपी भेजा जाएगा, इसे दर्ज करें और सबमिट पर क्लिक करें।"
+  
+  utter_ssl_error_h:
+  - text: "एसएसएल कनेक्शन त्रुटियां तब होती हैं जब आप एसएसएल सक्षम वेबसाइट से कनेक्ट करने का प्रयास कर रहे हैं और विभाग वेबसाइट के सर्वर से सुरक्षित कनेक्शन बनाने में असमर्थ है। सुधार के लिए, कृपया अपने आवेदन में एसएसएल कोड लागू करें। नमूना या चरणों के लिए कृपया देखें https://mgov.gov.in/msdp techarticle.jsp"
+  
+  utter_performa_invoice_h:
+  - text: "https://services.mgov.gov.in पर परफॉर्मा इनवॉइस लॉगिन जनरेट करने के लिए, फिर बिल विवरण पर जाएं, फिर https://services.mgov.gov.in/ पर वार्षिक रखरखाव लागत लॉगिन के लिए प्रदर्शन उत्पन्न करें, फिर बिल विवरण पर जाएं और फिर जनरेट करें एएमसी रिपोर्ट।"
+  
+  utter_utilization_report_h:
+  - text: "उपयोग रिपोर्ट या उपयोग रिपोर्ट सूचना संगठनों को बताती है कि उनके संसाधनों का कैसे, कहां और कितना उपयोग किया जा रहा है। https://services.mgov.gov.in पर लॉग इन करें और फिर गर्मियों की रिपोर्ट पर जाएं जिसके तहत आपको अपने सभी एसएमएस महीनेवार और दिनवार प्राप्त होंगे। आप इसे भविष्य के संदर्भ के लिए डाउनलोड भी कर सकते हैं।"
+  
+  utter_balance_transfer_h:
+  - text: "एसएमएस बैलेंस ट्रांसफर करने के लिए कृपया निम्नलिखित कदम उठाएं: https://services.mgov.gov.in पर लॉग इन करें और फिर अकाउंट मैनेज करें, फिर बैलेंस ट्रांसफर ड्रॉप डाउन मेनू से सब अकाउंट चुनें, संबंधित फील्ड भरें और ट्रांसफर बटन पर क्लिक करें।"
+  
+  utter_sender_id_h:
+  - text: "प्रेषक आईडी का चयन विभाग द्वारा किया जाता है। प्रेषक आईडी का उपयोग एसएमएस भेजने के लिए किया जाता है। प्रेषक आईडी 6 अक्षरों का होना चाहिए।"
+  
+  utter_payment_receipt_h:
+  - text: "भुगतान रसीद उत्पन्न करने के लिए कृपया चरणों का पालन करें: https://services.mgov.gov.in पर लॉगिन करें और फिर बिल विवरण पर जाएं, फिर भुगतान इतिहास पर जाएं और फिर डाउनलोड तीर पर क्लिक करें। आपकी भुगतान रसीद डाउनलोड हो जाएगी।"
+  
+  utter_connection_time_out_h:
+  - text: "आपको हुई असुविधा के लिए हमें खेद है। हम आपसे अनुरोध करते हैं कि आप अपने सर्वर से हमारे आईपी और पोर्ट पर टेलनेट की जांच करें; आपको यह भी जांचना होगा कि कोड ssl प्रमाणपत्र ठीक से लागू किया गया है या नहीं।"
+  
+  utter_ip_white_list_h:
+  - text: "हुई असुविधा के लिए हमें खेद है। हम आपसे अनुरोध करते हैं कि आप अपना आवेदन सार्वजनिक आईपी पता हमारी ईमेल आईडी msdp@cdac.in पर भेजें। हम आपसे फोन और ईमेल के जरिए संपर्क करेंगे।"
+  
+  utter_data_upload_fail_h:
+  - text: "आपको हुई असुविधा के लिए हमें खेद है। कृपया फ़ाइल का आकार, प्रारूप और एक्सेल फ़ाइल जांचें। साथ ही, आपसे यह जांचने का अनुरोध है कि अपलोड करने के बाद वॉयस कोड सफलतापूर्वक उत्पन्न हुआ है।"
+  
+  utter_sms_length_h:
+  - text: "अंग्रेजी के लिए प्रति पाठ एसएमएस की लंबाई 160 वर्ण है। अन्य भाषाओं के लिए 70 वर्ण है। अधिक जानकारी के लिए कृपया https://services.mgov.gov.in/ smscalculator.jsp देखें"
+  
+  utter_login_fail_h:
+  - text: "आपको हुई असुविधा के लिए हमें खेद है। आपसे अनुरोध है कि स्क्रीनशॉट के साथ हमें msdp@cdac.in पर मेल करें। आप अपना पासवर्ड रीसेट भी कर सकते हैं। इसके अलावा, कृपया हमारी पासवर्ड नीति देखें"
+  
+  utter_access_fail_h:
+  - text: "हुई असुविधा के लिए हमें खेद है। आपसे अनुरोध है कि स्क्रीनशॉट और यूआरएल विवरण के साथ हमें msdp@cdac.in पर मेल करें।"
+  
+  utter_pull_sms_error_h:
+  - text: "आपको हुई असुविधा के लिए हमें खेद है। कृपया अपना कीवर्ड, आईपी, पोर्ट विवरण msdp@cdac.in पर उपलब्ध कराएं। हम आपको जांचेंगे और अपडेट करेंगे।"
+  
+  utter_mobile_seva_e:
+  - text: "mobile seva or esms service is a national initiative on mobile governance which enables government departments and agencies in the country to provide electronic services through various mobile channels viz sms, ussd, ivrs and and apps."
+  
+  utter_registration_e:
+  - text: "in order to register one needs to create and account on http://services.mgov.gov.in/ with user id which gets approved by the msdp and the user gets registered."
+  
+  utter_push_sms_e:
+  - text: "push sms services are used by the departments to send information, notifications, alerts, etc to the citizens through sms."
+  
+  utter_pull_sms_e:
+  - text: "pull sms services can be used by citizen to seek information regarding departmental service from the departments short code 166 or 51969 or 9223166166 have been allocated by the department of telecommunication, government of india to access government services available through sms."
+  
+  utter_ivrs_e:
+  - text: "ivrs service is a technology that allows a computer to interact with humans through the use of voice and dtmf tones input via a keypad."
+  
+  utter_ussd_e:
+  - text: "ussd is a session based service unlike sms which is a store and forward service. ussd services are provided with two different service features: ussn, ussr and for more details please check the link: https://mgov.gov.in/msdp_ussddetail.jsp"
+  
+  utter_m_appstore_e:
+  - text: "m app store service that is mobile applications store service has been created to facilitate development and deployment of suitable applications for delivery of public services through mobile devices. the store is based upon service oriented architecture and cloud based technologies using open standards as far as practicable."
+  
+  utter_user_manual_e:
+  - text: "for user manual please check the link https://mgov.gov.in/msdp_services_usermanual.jsp for integration document please check the link https://mgov.gov.in/msdp_services_usermanual.jsp"
+  
+  utter_tri_exemption_e:
+  - text: "please send us your registered emailid and user id, we will mail you accordingly."
+  
+  utter_agreement_duration_e:
+  - text: "the duration of the agreement is for 2 years from the date of signing it."
+  
+  utter_sms_rate_e:
+  - text: "we request you to send us your sender id and registered email id, we will mail you the details. prior to 30 days we will notify you via mail regarding any rate changes."
+  
+  utter_short_code_e:
+  - text: "short codes, or short numbers, are short digit sequences, significantly shorter than telephone numbers that are used to address messages in the multimedia messaging system  and short message service systems of mobile network operators. In addition to messaging, they may be used in abbreviated dialing."
+
+  utter_long_code_e:
+  - text: "long code sms services also known as dedicated phone number or large number or virtual mobile number is the reception mechanism used by business to receive voice calls and sms messages."
+    
+  utter_long_short_numbers_e:
+  - text: "long code number 9223166166 and short code number 166, 51969"
+  
+  utter_sms_limit_e:
+  - text: "there are no specific daily limit for sms's, however initially 100 sms’s are allotted on the registered userid which can increase by the following steps login at https://services.mgov.gov.in and then go to manage account then go to update account then go to daily sms limit then update"
+  
+  utter_threshold_balance_e:
+  - text: "Threshold alert to receive notification when the account balance crosses a minimum. Mobile seva provide minimum threshold of 10000 sms's. Department need to mail on msdp@cdac.in in order to increase it."
+  
+  utter_various_sms_e:
+  - text: "one can send 3 types of sms’s by using portal: quick sms when an sms needs to be sent to an individual person. group sms when the sms needs to be sent group wise. builk sms this mode of sms is sent via excel file."
+  
+  utter_group_e:
+  - text: "First login at https://services.mgov.gov.in then go to group setting then add group then enter group name and click on the add icon."
+  
+  utter_secure_key_e:
+  - text: "secure key usually refers to password or alphanumeric key that end users enter to access a local area network. a security key is a resource for a specific security protocol that helps to secure the local network. the network security key differs from other network keys used to determine network addresses. for generation is login at https://services.mgov.gov.in then go to manage account then generate key. an otp will be sent to your registered mobile no enter it and click on submit."
+  
+  utter_ssl_error_e:
+  - text: "ssl connection errors occur when you are trying to connect to an ssl enabled website and department is unable to make a secure connection to the website's server.for rectification,please implements ssl code in your application. for sample or steps please refer https://mgov.gov.in/msdp_techarticle.jsp"
+  
+  utter_performa_invoice_e:
+  - text: "for generating performa invoice login at https://services.mgov.gov.in then go to bill details then generate performa for annual maintenance cost login at https://services.mgov.gov.in/ then go to bill details then generate amc report."
+  
+  utter_utilization_report_e:
+  - text: "the utilization report or usage report gives information organizations on how, where and how much of their resources are being used. login at https://services.mgov.gov.in and then go to summery report under which you will get your all sms usages month wise and day wise. you can even download the same for future reference."
+  
+  utter_balance_transfer_e:
+  - text: "for transferring sms balance please do the following steps: login at https://services.mgov.gov.in and then go to manage account then balance transfer select the sub account from the drop down menu, fill the respective fields and click on transfer button."
+  
+  utter_sender_id_e:
+  - text: "sender id is selected by the department. sender id is used to send sms. the sender id must be of 6 alphabets."
+  
+  utter_payment_receipt_e:
+  - text: "to generate payment receipt please follow the steps: login at https://services.mgov.gov.in and then go to bill details then go to payment history then go to click on the download arrow.your payment receipt will get downloaded."
+  
+  utter_connection_time_out_e:
+  - text: "we regret for the inconvenience caused. we request you to check the telnet from your server to our ip and port; you also need to check whether the code ssl certificate is implemented properly or not."
+  
+  utter_ip_white_list_e:
+  - text: "we regret for the inconvenience caused. we request you to send your application public ip address to our email id msdp@cdac.in . we will contact you via phone and email."
+  
+  utter_data_upload_fail_e:
+  - text: "we regret for the inconvenience caused. kindly check the file size, format and excel file. also, request you to check that the voice code is generated successfully post uploading file."
+  
+  utter_sms_length_e:
+  - text: "the per text sms length for english is 160 characters.for other languages 70 characters. for more detail please check https://services.mgov.gov.in/smscalculator.jsp"
+  
+  utter_login_fail_e:
+  - text: "we regret for the inconvenience caused. request you to mail us on msdp@cdac.in with screenshot. you can also reset your password. also, please check our password policy"
+  
+  utter_access_fail_e:
+  - text: "we regret for the inconvenience caused. request you to mail us on msdp@cdac.in with screenshot and url details."
+  
+  utter_pull_sms_error_e:
+  - text: "we regret for the inconvenience caused. please provide your keyword, ip, port details to msdp@cdac.in. we will check and update you."
+
+  utter_mobile_seva_g:
+  - text: "મોબાઈલ સેવા અથવા ઇ એસ એમ એસ સેવા એ મોબાઈલ ગવર્નન્સ પરની રાષ્ટ્રીય પહેલ છે જે દેશના સરકારી વિભાગો અને એજન્સીઓને વિવિધ મોબાઈલ ચેનલો જેમ કે એસએમએસ, યુએસએસડી, આઈવીઆરએસ અને એપ્સ દ્વારા ઈલેક્ટ્રોનિક સેવાઓ પ્રદાન કરવા સક્ષમ બનાવે છે."
+  
+  utter_registration_g:
+  - text: "રજીસ્ટર કરવા માટે તમારે યુઝર આઈડી સાથે http://services.mgov.gov.in/ પર એકાઉન્ટ બનાવવાની જરૂર છે જે એમ એસ ડી પી દ્વારા મંજૂર થાય છે અને વપરાશકર્તા રજીસ્ટર થાય છે."
+  
+  utter_push_sms_g:
+  - text: "પુશ એસએમએસ સેવાઓનો ઉપયોગ વિભાગો દ્વારા નાગરિકોને એસએમએસ દ્વારા માહિતી, સૂચનાઓ, ચેતવણીઓ વગેરે મોકલવા માટે કરવામાં આવે છે."
+  
+  utter_pull_sms_g:
+  - text: "પુલ એસએમએસ સેવાઓનો ઉપયોગ નાગરિકો દ્વારા વિભાગીય સેવા સંબંધિત માહિતી મેળવવા માટે વિભાગો પાસેથી શોર્ટ કોડ 166 અથવા 51969 અથવા 9223166166 દૂરસંચાર વિભાગ, ભારત સરકાર દ્વારા એસએમએસ દ્વારા ઉપલબ્ધ સરકારી સેવાઓને ઍક્સેસ કરવા માટે ફાળવવામાં આવ્યા છે."
+  
+  utter_ivrs_g:
+  - text: "આઇ વી આર એસ સર્વિસ એ એક એવી ટેક્નોલોજી છે જે કમ્પ્યુટરને કીપેડ દ્વારા વૉઇસ અને ડી ટી એફ એમ ટોન ઇનપુટના ઉપયોગ દ્વારા મનુષ્યો સાથે સંપર્ક કરવાની મંજૂરી આપે છે."
+  
+  utter_ussd_g:
+  - text: "યુ એસ એસ ડી એ એસએમએસથી વિપરીત સત્ર આધારિત સેવા છે જે સ્ટોર અને ફોરવર્ડ સેવા છે. યુ એસ એસ ડી સેવાઓ બે અલગ અલગ સેવા સુવિધાઓ સાથે પ્રદાન કરવામાં આવે છે: યુ એસ એસ એન, યુ એસ એસ આર અને વધુ વિગતો માટે કૃપા કરીને લિંક તપાસો: https://mgov.gov.in/msdp ussddetail.jsp"
+  
+  utter_m_appstore_g:
+  - text: "એમ એપ સ્ટોર સેવા કે જે મોબાઈલ એપ્લીકેશન સ્ટોર સેવા છે તે મોબાઈલ ઉપકરણો દ્વારા જાહેર સેવાઓની ડિલિવરી માટે યોગ્ય એપ્લિકેશનના વિકાસ અને જમાવટને સરળ બનાવવા માટે બનાવવામાં આવી છે. સ્ટોર જ્યાં સુધી વ્યવહારુ હોય ત્યાં સુધી ઓપન સ્ટાન્ડર્ડનો ઉપયોગ કરીને સર્વિસ ઓરિએન્ટેડ આર્કિટેક્ચર અને ક્લાઉડ આધારિત ટેકનોલોજી પર આધારિત છે."
+  
+  utter_user_manual_g:
+  - text: "વપરાશકર્તા માર્ગદર્શિકા માટે કૃપા કરીને એકીકરણ દસ્તાવેજ માટે https://mgov.gov.in/msdp_services usermanual.jsp લિંક તપાસો કૃપા કરીને લિંક તપાસો https://mgov.gov.in/msdp_services usermanual.jsp"
+  
+  utter_tri_exemption_g:
+  - text: "કૃપા કરીને અમને તમારો રજીસ્ટર્ડ ઈમેલ આઈડી અને યુઝર આઈડી મોકલો, અમે તમને તે મુજબ મેઈલ કરીશું."
+  
+  utter_agreement_duration_g:
+  - text: "કરારની અવધિ તેના પર હસ્તાક્ષર કર્યાની તારીખથી 2 વર્ષ માટે છે."
+  
+  utter_sms_rate_g:
+  - text: "અમે તમને તમારો પ્રેષક આઈડી અને નોંધાયેલ ઈમેલ આઈડી મોકલવા વિનંતી કરીએ છીએ, અમે તમને વિગતો મેઈલ કરીશું. 30 દિવસ પહેલા અમે તમને કોઈપણ દર ફેરફારો અંગે મેઈલ દ્વારા સૂચિત કરીશું."
+  
+  utter_short_code_g:
+  - text: "ટૂંકા કોડ્સ, અથવા ટૂંકા નંબરો, ટૂંકા અંકોનો ક્રમ છે, જે ટેલિફોન નંબરો કરતાં નોંધપાત્ર રીતે ટૂંકા હોય છે જેનો ઉપયોગ મલ્ટિમીડિયા મેસેજિંગ સિસ્ટમ અને મોબાઇલ નેટવર્ક ઓપરેટર્સની ટૂંકી સંદેશ સેવા સિસ્ટમમાં સંદેશાઓને સંબોધવા માટે થાય છે. મેસેજિંગ ઉપરાંત, તેનો ઉપયોગ સંક્ષિપ્ત ડાયલિંગમાં થઈ શકે છે."
+
+  utter_long_code_g:
+  - text: "લાંબા કોડની એસએમએસ સેવાઓ જેને સમર્પિત ફોન નંબર અથવા મોટી સંખ્યા અથવા વર્ચ્યુઅલ મોબાઇલ નંબર તરીકે પણ ઓળખવામાં આવે છે તે રિસેપ્શન મિકેનિઝમ છે જેનો ઉપયોગ વ્યવસાય દ્વારા વૉઇસ કૉલ્સ અને એસએમએસ સંદેશા પ્રાપ્ત કરવા માટે થાય છે."
+    
+  utter_long_short_numbers_g:
+  - text: "લોંગ કોડ નંબર 9223166166 અને શોર્ટ કોડ નંબર 166, 51969"
+  
+  utter_sms_limit_g:
+  - text: "એસએમએસ માટે કોઈ ચોક્કસ દૈનિક મર્યાદા નથી, જો કે શરૂઆતમાં 100 એસએમએસ રજિસ્ટર્ડ યુઝરઆઈડી પર ફાળવવામાં આવે છે જે નીચેના પગલાઓ દ્વારા https://services.mgov.gov.in પર લૉગિન કરીને વધી શકે છે અને પછી એકાઉન્ટ મેનેજ કરો પછી એકાઉન્ટ અપડેટ પર જાઓ પછી દૈનિક એસએમએસ મર્યાદા પર જાઓ અને પછી અપડેટ કરો"
+  
+  utter_threshold_balance_g:
+  - text: "જ્યારે એકાઉન્ટ બેલેન્સ ન્યૂનતમને પાર કરે ત્યારે સૂચના પ્રાપ્ત કરવા માટે થ્રેશોલ્ડ ચેતવણી. મોબાઇલ સેવા 10000 એસએમએસની ન્યૂનતમ થ્રેશોલ્ડ પૂરી પાડે છે. તેને વધારવા માટે વિભાગને msdp@cdac.in પર મેઇલ કરવાની જરૂર છે."
+  
+  utter_various_sms_g:
+  - text: "કોઈ વ્યક્તિ પોર્ટલનો ઉપયોગ કરીને 3 પ્રકારના એસએમએસ મોકલી શકે છે: જ્યારે કોઈ વ્યક્તિગત વ્યક્તિને એસએમએસ મોકલવાની જરૂર હોય ત્યારે ઝડપી એસએમએસ. સમૂહ એસએમએસ જ્યારે એસએમએસને જૂથ મુજબ મોકલવાની જરૂર હોય. બલ્ક એસ એમ એસ એસએમએસનો આ મોડ એક્સેલ ફાઇલ દ્વારા મોકલવામાં આવે છે."
+  
+  utter_group_g:
+  - text: "પહેલા https://services.mgov.gov.in પર લોગિન કરો પછી ગ્રુપ સેટિંગ પર જાઓ પછી ગ્રુપ ઉમેરો પછી ગ્રુપનું નામ એન્ટર કરો અને એડ આઈકોન પર ક્લિક કરો."
+  
+  utter_secure_key_g:
+  - text: "સુરક્ષિત કી સામાન્ય રીતે પાસવર્ડ અથવા આલ્ફાન્યુમેરિક કીનો સંદર્ભ આપે છે જે અંતિમ વપરાશકર્તાઓ લોકલ એરિયા નેટવર્કને ઍક્સેસ કરવા માટે દાખલ કરે છે. સુરક્ષા કી એ ચોક્કસ સુરક્ષા પ્રોટોકોલ માટેનો સંસાધન છે જે સ્થાનિક નેટવર્કને સુરક્ષિત કરવામાં મદદ કરે છે. નેટવર્ક સિક્યોરિટી કી નેટવર્ક એડ્રેસ નક્કી કરવા માટે વપરાતી અન્ય નેટવર્ક કીથી અલગ છે. જનરેશન માટે https://services.mgov.gov.in પર લૉગિન કરો અને પછી મેનેજ એકાઉન્ટ પર જાઓ અને પછી કી જનરેટ કરો. તમારા રજિસ્ટર્ડ મોબાઇલ પર એક ઓટીપી મોકલવામાં આવશે અને તેને દાખલ કરો અને સબમિટ પર ક્લિક કરો."
+  
+  utter_ssl_error_g:
+  - text: "એસ એસ એલ કનેક્શન ભૂલો ત્યારે થાય છે જ્યારે તમે ssl સક્ષમ વેબસાઇટ સાથે કનેક્ટ કરવાનો પ્રયાસ કરી રહ્યાં હોવ અને વિભાગ વેબસાઇટના સર્વર સાથે સુરક્ષિત કનેક્શન કરવામાં અસમર્થ હોય. સુધારણા માટે, કૃપા કરીને તમારી એપ્લિકેશનમાં એસ એસ એલ કોડ લાગુ કરો. નમૂના અથવા પગલાં માટે કૃપા કરીને https://mgov.gov.in/ms નો સંદર્ભ લો"
+  
+  utter_performa_invoice_g:
+  - text: "પરફોર્મા ઇન્વોઇસ જનરેટ કરવા માટે https://services.mgov.gov.in પર લોગિન કરો પછી બિલની વિગતો પર જાઓ પછી https://services.mgov.gov.in/ પર વાર્ષિક જાળવણી ખર્ચ લોગિન માટે પરફોર્મા જનરેટ કરો પછી બિલની વિગતો પર જાઓ પછી જનરેટ કરો એએમસી રિપોર્ટ."
+  
+  utter_utilization_report_g:
+  - text: "ઉપયોગિતા અહેવાલ અથવા ઉપયોગ અહેવાલ સંસ્થાને તેમના સંસાધનોનો કેવી રીતે, ક્યાં અને કેટલો ઉપયોગ કરવામાં આવે છે તેની માહિતી આપે છે. https://services.mgov.gov.in પર લોગિન કરો અને પછી સમરી રિપોર્ટ પર જાઓ જેના હેઠળ તમને તમારા બધા એસએમએસ વપરાશ મહિના પ્રમાણે અને દિવસ પ્રમાણે મળશે. તમે તેને ભવિષ્યના સંદર્ભ માટે ડાઉનલોડ પણ કરી શકો છો."
+  
+  utter_balance_transfer_g:
+  - text: "એસએમએસ બેલેન્સ ટ્રાન્સફર કરવા માટે, કૃપા કરીને નીચેના પગલાંઓ કરો: https://services.mgov.gov.in પર લોગિન કરો અને પછી એકાઉન્ટ મેનેજ કરો પર જાઓ પછી બેલેન્સ ટ્રાન્સફર ડ્રોપ ડાઉન મેનૂમાંથી સબ એકાઉન્ટ પસંદ કરો, સંબંધિત ફીલ્ડ્સ ભરો અને ટ્રાન્સફર પર ક્લિક કરો. બટન"
+  
+  utter_sender_id_g:
+  - text: "પ્રેષક આઈડી વિભાગ દ્વારા પસંદ કરવામાં આવે છે. સેન્ડર આઈડીનો ઉપયોગ એસએમએસ મોકલવા માટે થાય છે. પ્રેષક આઈડી 6 મૂળાક્ષરોનો હોવો જોઈએ."
+  
+  utter_payment_receipt_g:
+  - text: "ચુકવણીની રસીદ જનરેટ કરવા માટે કૃપા કરીને પગલાં અનુસરો: https://services.mgov.gov.in પર લોગિન કરો અને પછી બિલની વિગતો પર જાઓ પછી ચુકવણી ઇતિહાસ પર જાઓ અને પછી ડાઉનલોડ એરો પર ક્લિક કરો. તમારી ચુકવણીની રસીદ ડાઉનલોડ થઈ જશે."
+  
+  utter_connection_time_out_g:
+  - text: "અમને થયેલી અસુવિધા બદલ અમે દિલગીર છીએ. અમે તમને વિનંતી કરીએ છીએ કે તમારા સર્વરથી અમારા ip અને પોર્ટ પર ટેલનેટ તપાસો; તમારે એ પણ તપાસવાની જરૂર છે કે કોડ એસએસએલ પ્રમાણપત્ર યોગ્ય રીતે લાગુ થયું છે કે નહીં."
+  
+  utter_ip_white_list_g:
+  - text: "અમને થયેલી અસુવિધા બદલ અમે દિલગીર છીએ. અમે તમને વિનંતી કરીએ છીએ કે તમારી અરજી સાર્વજનિક આઈપી એડ્રેસ અમારા ઈમેલ આઈડી msdp@cdac.in પર મોકલો. અમે ફોન અને ઈમેલ દ્વારા તમારો સંપર્ક કરીશું."
+  
+  utter_data_upload_fail_g:
+  - text: "અમને થયેલી અસુવિધા બદલ અમે દિલગીર છીએ. કૃપા કરીને ફાઇલનું કદ, ફોર્મેટ અને એક્સેલ ફાઇલ તપાસો. સાથે જ, અપલોડિંગ ફાઇલ પછી વૉઇસ કોડ સફળતાપૂર્વક જનરેટ થયો છે કે નહીં તે તપાસવા વિનંતી."
+  
+  utter_sms_length_g:
+  - text: "અંગ્રેજી માટે પ્રતિ ટેક્સ્ટ એસએમએસ લંબાઈ 160 અક્ષરો છે. અન્ય ભાષાઓ માટે 70 અક્ષરો. વધુ વિગત માટે કૃપા કરીને https://services.mgov.gov.in/ smscalculator.jsp તપાસો"
+  
+  utter_login_fail_g:
+  - text: "અમને થયેલી અસુવિધા બદલ અમે દિલગીર છીએ. સ્ક્રીનશોટ સાથે અમને msdp@cdac.in પર મેઇલ કરવા વિનંતી. તમે તમારો પાસવર્ડ રીસેટ પણ કરી શકો છો. પણ, કૃપા કરીને અમારી પાસવર્ડ નીતિ તપાસો"
+  
+  utter_access_fail_g:
+  - text: "અમને થયેલી અસુવિધા બદલ અમે દિલગીર છીએ. સ્ક્રીનશોટ અને યુ આર એલ વિગતો સાથે અમને msdp@cdac.in પર મેઇલ કરવા વિનંતી."
+  
+  utter_pull_sms_error_g:
+  - text: "અમને થયેલી અસુવિધા બદલ અમે દિલગીર છીએ. કૃપા કરીને msdp@cdac.in પર તમારા કીવર્ડ, આઈપી, પોર્ટ વિગતો પ્રદાન કરો. અમે તમને તપાસીશું અને અપડેટ કરીશું."
+
+  utter_mobile_seva_k:
+  - text: "ಮೊಬೈಲ್ ಸೇವಾ ಅಥವಾ ಎಸ್‌ಎಂಎಸ್ ಸೇವೆಯು ಮೊಬೈಲ್ ಆಡಳಿತದ ರಾಷ್ಟ್ರೀಯ ಉಪಕ್ರಮವಾಗಿದ್ದು, ಇದು ದೇಶದ ಸರ್ಕಾರಿ ಇಲಾಖೆಗಳು ಮತ್ತು ಏಜೆನ್ಸಿಗಳಿಗೆ ವಿವಿಧ ಮೊಬೈಲ್ ಚಾನೆಲ್‌ಗಳಾದ ಎಸ್‌ಎಂಎಸ್, ಯುಎಸ್‌ಎಸ್‌ಡಿ, ಐವಿಆರ್‌ಎಸ್ ಮತ್ತು ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಮೂಲಕ ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸೇವೆಗಳನ್ನು ಒದಗಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ."
+  
+  utter_registration_k:
+  - text: "ನೋಂದಾಯಿಸಲು ಒಬ್ಬರು http://services.mgov.gov.in/ ನಲ್ಲಿ ಬಳಕೆದಾರರ ಐಡಿಯನ್ನು ರಚಿಸಬೇಕಾಗುತ್ತದೆ ಮತ್ತು ಖಾತೆಯನ್ನು ಎಂ ರು ಡಿ ಪ ನಿಂದ ಅನುಮೋದಿಸಲಾಗಿದೆ ಮತ್ತು ಬಳಕೆದಾರರು ನೋಂದಾಯಿಸಿಕೊಳ್ಳುತ್ತಾರೆ."
+  
+  utter_push_sms_k:
+  - text: "ಎಸ್ ಎಂ ಎಸ್ ಮೂಲಕ ನಾಗರಿಕರಿಗೆ ಮಾಹಿತಿ, ಅಧಿಸೂಚನೆಗಳು, ಎಚ್ಚರಿಕೆಗಳು ಇತ್ಯಾದಿಗಳನ್ನು ಕಳುಹಿಸಲು ಇಲಾಖೆಗಳು ಪುಶ್ ಎಸ್ ಎಂ ಎಸ್ ಸೇವೆಗಳನ್ನು ಬಳಸುತ್ತವೆ."
+  
+  utter_pull_sms_k:
+  - text: "ಎಸ್ ಎಂ ಎಸ್ ಮೂಲಕ ಲಭ್ಯವಿರುವ ಸರ್ಕಾರಿ ಸೇವೆಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಭಾರತ ಸರ್ಕಾರದ ದೂರಸಂಪರ್ಕ ಇಲಾಖೆಯಿಂದ ಹಂಚಿಕೆಯಾಗಿರುವ ಇಲಾಖೆಗಳ ಕಿರು ಕೋಡ್ 166 ಅಥವಾ 51969 ಅಥವಾ 9223166166 ನಿಂದ ಇಲಾಖಾ ಸೇವೆಯ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಲು ನಾಗರಿಕರು ಪುಲ್ ಎಸ್ ಎಂ ಎಸ್ ಸೇವೆಗಳನ್ನು ಬಳಸಬಹುದು."
+  
+  utter_ivrs_k:
+  - text: "ಐವಿಆರ್ಎಸ್ ಸೇವೆಯು ಒಂದು ತಂತ್ರಜ್ಞಾನವಾಗಿದ್ದು, ಇದು ಕೀಪ್ಯಾಡ್ ಮೂಲಕ ಧ್ವನಿ ಮತ್ತು ಡಿಟಿಎಂಎಫ್ ಟೋನ್ಗಳ ಇನ್‌ಪುಟ್ ಮೂಲಕ ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಮನುಷ್ಯರೊಂದಿಗೆ ಸಂವಹನ ಮಾಡಲು ಅನುಮತಿಸುತ್ತದೆ."
+  
+  utter_ussd_k:
+  - text: "ನಮಗೆ ಎಸ್ ಡಿ ಎನ್ನುವುದು ಎಸ್ ಎಂ ಎಸ್ ಗಿಂತ ಭಿನ್ನವಾಗಿ ಒಂದು ಅಧಿವೇಶನ ಆಧಾರಿತ ಸೇವೆಯಾಗಿದ್ದು ಅದು ಸ್ಟೋರ್ ಮತ್ತು ಫಾರ್ವರ್ಡ್ ಸೇವೆಯಾಗಿದೆ. ನಮಗೆ ಎಸ್ ಡಿ ಸೇವೆಗಳನ್ನು ಎರಡು ವಿಭಿನ್ನ ಸೇವಾ ವೈಶಿಷ್ಟ್ಯಗಳೊಂದಿಗೆ ಒದಗಿಸಲಾಗಿದೆ: ಯು ಎಸ್ ಎಸ್ ಆನ್, ಯು ಎಸ್ ಎಸ್ ಆರ್ ಮತ್ತು ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು ಲಿಂಕ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ: https://mgov.gov.in/msdp ussddetail.jsp"
+  
+  utter_m_appstore_k:
+  - text: "ಮೊಬೈಲ್ ಸಾಧನಗಳ ಮೂಲಕ ಸಾರ್ವಜನಿಕ ಸೇವೆಗಳನ್ನು ತಲುಪಿಸಲು ಸೂಕ್ತವಾದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಅಭಿವೃದ್ಧಿ ಮತ್ತು ನಿಯೋಜನೆಯನ್ನು ಸುಲಭಗೊಳಿಸಲು ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಸ್ಟೋರ್ ಸೇವೆಯಾಗಿರುವ ಮೀ ಅಪ್ಲಿಕೇಶನ್ ಸ್ಟೋರ್ ಸೇವೆಯನ್ನು ರಚಿಸಲಾಗಿದೆ. ಅಂಗಡಿಯು ಸೇವಾ ಆಧಾರಿತ ವಾಸ್ತುಶೈಲಿ ಮತ್ತು ಕ್ಲೌಡ್ ಆಧಾರಿತ ತಂತ್ರಜ್ಞಾನಗಳನ್ನು ತೆರೆದ ಮಾನದಂಡಗಳನ್ನು ಬಳಸುವುದನ್ನು ಆಧರಿಸಿದೆ."
+  
+  utter_user_manual_k:
+  - text: "ಬಳಕೆದಾರರ ಕೈಪಿಡಿಗಾಗಿ ದಯವಿಟ್ಟು ಲಿಂಕ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ https://mgov.gov.in/msdp_services usermanual.jsp ಏಕೀಕರಣ ದಾಖಲೆಗಾಗಿ ದಯವಿಟ್ಟು ಲಿಂಕ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ https://mgov.gov.in/msdp_services usermanual.jsp"
+  
+  utter_tri_exemption_k:
+  - text: "ದಯವಿಟ್ಟು ನಿಮ್ಮ ನೋಂದಾಯಿತ ಇಮೇಲ್ ಐಡಿ ಮತ್ತು ಬಳಕೆದಾರ ಐಡಿಯನ್ನು ನಮಗೆ ಕಳುಹಿಸಿ, ಅದಕ್ಕೆ ಅನುಗುಣವಾಗಿ ನಾವು ನಿಮಗೆ ಮೇಲ್ ಮಾಡುತ್ತೇವೆ."
+  
+  utter_agreement_duration_k:
+  - text: "ಒಪ್ಪಂದದ ಅವಧಿಯು ಸಹಿ ಮಾಡಿದ ದಿನಾಂಕದಿಂದ 2 ವರ್ಷಗಳವರೆಗೆ ಇರುತ್ತದೆ."
+  
+  utter_sms_rate_k:
+  - text: "ನಿಮ್ಮ ಕಳುಹಿಸುವವರ ಐಡಿ ಮತ್ತು ನೋಂದಾಯಿತ ಇಮೇಲ್ ಐಡಿಯನ್ನು ನಮಗೆ ಕಳುಹಿಸಲು ನಾವು ನಿಮ್ಮನ್ನು ವಿನಂತಿಸುತ್ತೇವೆ, ನಾವು ನಿಮಗೆ ವಿವರಗಳನ್ನು ಮೇಲ್ ಮಾಡುತ್ತೇವೆ. 30 ದಿನಗಳ ಮೊದಲು ನಾವು ಯಾವುದೇ ದರ ಬದಲಾವಣೆಗಳ ಬಗ್ಗೆ ಮೇಲ್ ಮೂಲಕ ನಿಮಗೆ ತಿಳಿಸುತ್ತೇವೆ."
+  
+  utter_short_code_k:
+  - text: "ಕಿರುಸಂಕೇತಗಳು, ಅಥವಾ ಕಿರುಸಂಖ್ಯೆಗಳು, ಕಿರು-ಅಂಕಿಯ ಅನುಕ್ರಮಗಳು, ಬಹುಮಾಧ್ಯಮ ಸಂದೇಶ ವ್ಯವಸ್ಥೆ ಮತ್ತು ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್ ಆಪರೇಟರ್‌ಗಳ ಕಿರು ಸಂದೇಶ ಸೇವಾ ವ್ಯವಸ್ಥೆಗಳಲ್ಲಿ ಸಂದೇಶಗಳನ್ನು ತಿಳಿಸಲು ಬಳಸಲಾಗುವ ದೂರವಾಣಿ ಸಂಖ್ಯೆಗಳಿಗಿಂತ ಗಮನಾರ್ಹವಾಗಿ ಚಿಕ್ಕದಾಗಿದೆ. ಸಂದೇಶ ಕಳುಹಿಸುವುದರ ಜೊತೆಗೆ, ಅವುಗಳನ್ನು ಸಂಕ್ಷಿಪ್ತ ಡಯಲಿಂಗ್‌ನಲ್ಲಿ ಬಳಸಬಹುದು."
+
+  utter_long_code_k:
+  - text: "ದೀರ್ಘ ಕೋಡ್ ಎಸ್ ಎಂ ಎಸ್ ಸೇವೆಗಳನ್ನು ಮೀಸಲಾದ ಫೋನ್ ಸಂಖ್ಯೆ ಅಥವಾ ದೊಡ್ಡ ಸಂಖ್ಯೆ ಅಥವಾ ವರ್ಚುವಲ್ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಎಂದೂ ಕರೆಯುತ್ತಾರೆ, ಧ್ವನಿ ಕರೆಗಳು ಮತ್ತು ಎಸ್ ಎಂ ಎಸ್ ಸಂದೇಶಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ವ್ಯಾಪಾರವು ಬಳಸುವ ಸ್ವಾಗತ ಕಾರ್ಯವಿಧಾನವಾಗಿದೆ."
+    
+  utter_long_short_numbers_k:
+  - text: "ದೀರ್ಘ ಕೋಡ್ ಸಂಖ್ಯೆ 9223166166 ಮತ್ತು ಶಾರ್ಟ್ ಕೋಡ್ ಸಂಖ್ಯೆ 166, 51969"
+  
+  utter_sms_limit_k:
+  - text: "ಎಸ್‌ಎಂಎಸ್‌ಗಳಿಗೆ ಯಾವುದೇ ನಿರ್ದಿಷ್ಟ ದೈನಂದಿನ ಮಿತಿಯಿಲ್ಲ, ಆದಾಗ್ಯೂ ಆರಂಭದಲ್ಲಿ 100 ಎಸ್‌ಎಂಎಸ್‌ಗಳನ್ನು ನೋಂದಾಯಿತ ಯೂಸರ್‌ಐಡಿಯಲ್ಲಿ ಹಂಚಲಾಗುತ್ತದೆ, ಇದನ್ನು ಈ ಕೆಳಗಿನ ಹಂತಗಳ ಮೂಲಕ ಹೆಚ್ಚಿಸಬಹುದು https://services.mgov.gov.in ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ ಮತ್ತು ನಂತರ ಖಾತೆಯನ್ನು ನಿರ್ವಹಿಸಲು ಹೋಗಿ ನಂತರ ಖಾತೆಯನ್ನು ನವೀಕರಿಸಲು ಹೋಗಿ ನಂತರ ದೈನಂದಿನ ಎಸ್ ಎಂ ಎಸ್ ಮಿತಿಗೆ ಹೋಗಿ ನಂತರ ನವೀಕರಿಸಿ"
+  
+  utter_threshold_balance_k:
+  - text: "ಖಾತೆಯ ಬ್ಯಾಲೆನ್ಸ್ ಕನಿಷ್ಠವನ್ನು ದಾಟಿದಾಗ ಅಧಿಸೂಚನೆಯನ್ನು ಸ್ವೀಕರಿಸಲು ಥ್ರೆಶೋಲ್ಡ್ ಎಚ್ಚರಿಕೆ. ಮೊಬೈಲ್ ಸೇವಾ ಕನಿಷ್ಠ 10000 ಎಸ್‌ಎಂಎಸ್‌ಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ. ಅದನ್ನು ಹೆಚ್ಚಿಸಲು ಇಲಾಖೆಯು msdp@cdac.in ಗೆ ಮೇಲ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."
+  
+  utter_various_sms_k:
+  - text: "ಪೋರ್ಟಲ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು ಒಬ್ಬರು 3 ರೀತಿಯ ಎಸ್ ಎಂ ಎಸ್ ಗಳನ್ನು ಕಳುಹಿಸಬಹುದು: ಒಬ್ಬ ವ್ಯಕ್ತಿಗೆ ಎಸ್ ಎಂ ಎಸ್ ಕಳುಹಿಸಬೇಕಾದಾಗ ತ್ವರಿತ ಎಸ್ ಎಂ ಎಸ್. ಎಸ್ ಎಂ ಎಸ್ ಅನ್ನು ಗುಂಪುವಾರು ಕಳುಹಿಸಬೇಕಾದಾಗ ಗುಂಪು ಎಸ್ ಎಂ ಎಸ್. ಬಿಲ್ಕ್ ಎಸ್ ಎಂ ಎಸ್ ಈ ಮೋಡ್ ಎಸ್ ಎಂ ಎಸ್ ಅನ್ನು ಎಕ್ಸೆಲ್ ಫೈಲ್ ಮೂಲಕ ಕಳುಹಿಸಲಾಗುತ್ತದೆ."
+  
+  utter_group_k:
+  - text: "ಮೊದಲು https://services.mgov.gov.in ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ ನಂತರ ಗುಂಪು ಸೆಟ್ಟಿಂಗ್‌ಗೆ ಹೋಗಿ ನಂತರ ಗುಂಪನ್ನು ಸೇರಿಸಿ ನಂತರ ಗುಂಪಿನ ಹೆಸರನ್ನು ನಮೂದಿಸಿ ಮತ್ತು ಆಡ್ ಐಕಾನ್ ಕ್ಲಿಕ್ ಮಾಡಿ."
+  
+  utter_secure_key_k:
+  - text: "ಸುರಕ್ಷಿತ ಕೀ ಸಾಮಾನ್ಯವಾಗಿ ಪಾಸ್‌ವರ್ಡ್ ಅಥವಾ ಆಲ್ಫಾನ್ಯೂಮರಿಕ್ ಕೀ ಅನ್ನು ಉಲ್ಲೇಖಿಸುತ್ತದೆ, ಅದು ಸ್ಥಳೀಯ ಪ್ರದೇಶ ನೆಟ್‌ವರ್ಕ್ ಅನ್ನು ಪ್ರವೇಶಿಸಲು ಅಂತಿಮ ಬಳಕೆದಾರರು ನಮೂದಿಸುತ್ತದೆ. ಸುರಕ್ಷತಾ ಕೀಯು ಸ್ಥಳೀಯ ನೆಟ್‌ವರ್ಕ್ ಅನ್ನು ಸುರಕ್ಷಿತವಾಗಿರಿಸಲು ಸಹಾಯ ಮಾಡುವ ನಿರ್ದಿಷ್ಟ ಸುರಕ್ಷತಾ ಪ್ರೋಟೋಕಾಲ್‌ನ ಸಂಪನ್ಮೂಲವಾಗಿದೆ. ನೆಟ್‌ವರ್ಕ್ ಭದ್ರತಾ ಕೀಯು ನೆಟ್‌ವರ್ಕ್ ವಿಳಾಸಗಳನ್ನು ನಿರ್ಧರಿಸಲು ಬಳಸುವ ಇತರ ನೆಟ್‌ವರ್ಕ್ ಕೀಗಳಿಂದ ಭಿನ್ನವಾಗಿರುತ್ತದೆ. ಪೀಳಿಗೆಗೆ https://services.mgov.gov.in ನಲ್ಲಿ ಲಾಗಿನ್ ಆಗಿರುತ್ತದೆ ನಂತರ ಖಾತೆಯನ್ನು ನಿರ್ವಹಿಸಲು ಹೋಗಿ ನಂತರ ಕೀಲಿಯನ್ನು ರಚಿಸಿ. ನಿಮ್ಮ ನೋಂದಾಯಿತ ಮೊಬೈಲ್‌ಗೆ ಒಟಿಪಿ ಕಳುಹಿಸಲಾಗುವುದು ಅದನ್ನು ನಮೂದಿಸಿ ಮತ್ತು ಸಲ್ಲಿಸು ಕ್ಲಿಕ್ ಮಾಡಿ."
+  
+  utter_ssl_error_k:
+  - text: "ನೀವು ರು ರು ಅಲೆ ಸಕ್ರಿಯಗೊಳಿಸಿದ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ರು ರು ಅಲೆ ಸಂಪರ್ಕ ದೋಷಗಳು ಸಂಭವಿಸುತ್ತವೆ ಮತ್ತು ಇಲಾಖೆಯು ವೆಬ್‌ಸೈಟ್‌ನ ಸರ್ವರ್‌ಗೆ ಸುರಕ್ಷಿತ ಸಂಪರ್ಕವನ್ನು ಮಾಡಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ. ಸರಿಪಡಿಸಲು, ದಯವಿಟ್ಟು ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ರು ರು ಅಲೆ ಕೋಡ್ ಅನ್ನು ಅಳವಡಿಸಿ. ಮಾದರಿ ಅಥವಾ ಹಂತಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು https://mgov.gov.in/msdp techarticle.jsp ಅನ್ನು ನೋಡಿ"
+  
+  utter_performa_invoice_k:
+  - text: "https://services.mgov.gov.in ನಲ್ಲಿ ಕಾರ್ಯಕ್ಷಮತೆಯ ಇನ್‌ವಾಯ್ಸ್ ಲಾಗಿನ್ ಅನ್ನು ರಚಿಸಲು ನಂತರ ಬಿಲ್ ವಿವರಗಳಿಗೆ ಹೋಗಿ ನಂತರ ವಾರ್ಷಿಕ ನಿರ್ವಹಣಾ ವೆಚ್ಚದ ಲಾಗಿನ್‌ಗಾಗಿ ಪ್ರದರ್ಶನವನ್ನು ರಚಿಸಿ ನಂತರ https://services.mgov.gov.in/ ನಲ್ಲಿ ಬಿಲ್ ವಿವರಗಳಿಗೆ ಹೋಗಿ ನಂತರ ರಚಿಸಿ ಎಎಂಸಿ ವರದಿ."
+  
+  utter_utilization_report_k:
+  - text: "ಬಳಕೆಯ ವರದಿ ಅಥವಾ ಬಳಕೆಯ ವರದಿಯು ಸಂಸ್ಥೆಗಳಿಗೆ ಹೇಗೆ, ಎಲ್ಲಿ ಮತ್ತು ಎಷ್ಟು ಸಂಪನ್ಮೂಲಗಳನ್ನು ಬಳಸಲಾಗುತ್ತಿದೆ ಎಂಬುದರ ಕುರಿತು ಮಾಹಿತಿ ನೀಡುತ್ತದೆ. https://services.mgov.gov.in ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ ಮತ್ತು ನಂತರ ಬೇಸಿಗೆ ವರದಿಗೆ ಹೋಗಿ ಅದರ ಅಡಿಯಲ್ಲಿ ನಿಮ್ಮ ಎಲ್ಲಾ ಎಸ್‌ಎಂಎಸ್ ಬಳಕೆಗಳನ್ನು ತಿಂಗಳುವಾರು ಮತ್ತು ದಿನವಾರು ಪಡೆಯುತ್ತೀರಿ. ಭವಿಷ್ಯದ ಉಲ್ಲೇಖಕ್ಕಾಗಿ ನೀವು ಅದನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು."
+  
+  utter_balance_transfer_k:
+  - text: "SMS ಬ್ಯಾಲೆನ್ಸ್ ಅನ್ನು ವರ್ಗಾಯಿಸಲು ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನ ಹಂತಗಳನ್ನು ಮಾಡಿ: https://services.mgov.gov.in ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ ಮತ್ತು ನಂತರ ಖಾತೆಯನ್ನು ನಿರ್ವಹಿಸಿ ನಂತರ ಬ್ಯಾಲೆನ್ಸ್ ವರ್ಗಾವಣೆಗೆ ಹೋಗಿ ಡ್ರಾಪ್ ಡೌನ್ ಮೆನುವಿನಿಂದ ಉಪ ಖಾತೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ, ಆಯಾ ಕ್ಷೇತ್ರಗಳನ್ನು ಭರ್ತಿ ಮಾಡಿ ಮತ್ತು ವರ್ಗಾವಣೆಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಬಟನ್."
+  
+  utter_sender_id_k:
+  - text: "ಕಳುಹಿಸುವವರ ಐಡಿಯನ್ನು ಇಲಾಖೆಯು ಆಯ್ಕೆ ಮಾಡಿದೆ. ಕಳುಹಿಸುವವರ ಐಡಿಯನ್ನು ಎಸ್ ಎಂ ಎಸ್ ಕಳುಹಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ. ಕಳುಹಿಸುವವರ ಐಡಿ 6 ವರ್ಣಮಾಲೆಗಳಾಗಿರಬೇಕು."
+  
+  utter_payment_receipt_k:
+  - text: "ಪಾವತಿ ರಸೀದಿಯನ್ನು ರಚಿಸಲು ದಯವಿಟ್ಟು ಈ ಹಂತಗಳನ್ನು ಅನುಸರಿಸಿ: https://services.mgov.gov.in ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ ಮತ್ತು ನಂತರ ಬಿಲ್ ವಿವರಗಳಿಗೆ ಹೋಗಿ ನಂತರ ಪಾವತಿ ಇತಿಹಾಸಕ್ಕೆ ಹೋಗಿ ನಂತರ ಡೌನ್‌ಲೋಡ್ ಬಾಣ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ. ನಿಮ್ಮ ಪಾವತಿ ರಶೀದಿ ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತದೆ."
+  
+  utter_connection_time_out_k:
+  - text: "ಉಂಟಾದ ಅನಾನುಕೂಲತೆಗಾಗಿ ನಾವು ವಿಷಾದಿಸುತ್ತೇವೆ. ನಿಮ್ಮ ಸರ್ವರ್‌ನಿಂದ ನಮ್ಮ ಐಪಿ ಮತ್ತು ಪೋರ್ಟ್‌ಗೆ ಟೆಲ್ನೆಟ್ ಅನ್ನು ಪರಿಶೀಲಿಸಲು ನಾವು ನಿಮ್ಮನ್ನು ವಿನಂತಿಸುತ್ತೇವೆ; ಕೋಡ್ ರು ರು ಅಲೆ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಸರಿಯಾಗಿ ಅಳವಡಿಸಲಾಗಿದೆಯೇ ಅಥವಾ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಸಹ ನೀವು ಪರಿಶೀಲಿಸಬೇಕು."
+  
+  utter_ip_white_list_k:
+  - text: "ಉಂಟಾದ ಅನಾನುಕೂಲತೆಗಾಗಿ ನಾವು ವಿಷಾದಿಸುತ್ತೇವೆ. ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ ಸಾರ್ವಜನಿಕ ಐ ಪಿ ವಿಳಾಸವನ್ನು ನಮ್ಮ ಇಮೇಲ್ ಐಡಿ msdp@cdac.in ಗೆ ಕಳುಹಿಸಲು ನಾವು ನಿಮ್ಮನ್ನು ವಿನಂತಿಸುತ್ತೇವೆ. ನಾವು ನಿಮ್ಮನ್ನು ಫೋನ್ ಮತ್ತು ಇಮೇಲ್ ಮೂಲಕ ಸಂಪರ್ಕಿಸುತ್ತೇವೆ."
+  
+  utter_data_upload_fail_k:
+  - text: "ಉಂಟಾದ ಅನಾನುಕೂಲತೆಗಾಗಿ ನಾವು ವಿಷಾದಿಸುತ್ತೇವೆ. ದಯವಿಟ್ಟು ಫೈಲ್ ಗಾತ್ರ, ಫಾರ್ಮ್ಯಾಟ್ ಮತ್ತು ಎಕ್ಸೆಲ್ ಫೈಲ್ ಅನ್ನು ಪರಿಶೀಲಿಸಿ. ಅಲ್ಲದೆ, ಫೈಲ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಿದ ನಂತರ ಧ್ವನಿ ಕೋಡ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ರಚಿಸಲಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲು ನಿಮ್ಮನ್ನು ವಿನಂತಿಸಿ."
+  
+  utter_sms_length_k:
+  - text: "ಇಂಗ್ಲಿಷ್‌ಗೆ ಪ್ರತಿ ಪಠ್ಯ ಎಸ್ ಎಂ ಎಸ್ ಉದ್ದವು 160 ಅಕ್ಷರಗಳು. ಇತರ ಭಾಷೆಗಳಿಗೆ 70 ಅಕ್ಷರಗಳು. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು https://services.mgov.gov.in/ smscalculator.jsp ಅನ್ನು ಪರಿಶೀಲಿಸಿ"
+  
+  utter_login_fail_k:
+  - text: "ಉಂಟಾದ ಅನಾನುಕೂಲತೆಗಾಗಿ ನಾವು ವಿಷಾದಿಸುತ್ತೇವೆ. ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ನೊಂದಿಗೆ msdp@cdac.in ನಲ್ಲಿ ನಮಗೆ ಮೇಲ್ ಮಾಡಲು ವಿನಂತಿಸಿ. ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಸಹ ನೀವು ಮರುಹೊಂದಿಸಬಹುದು. ಅಲ್ಲದೆ, ದಯವಿಟ್ಟು ನಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ನೀತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ"
+  
+  utter_access_fail_k:
+  - text: "ಉಂಟಾದ ಅನಾನುಕೂಲತೆಗಾಗಿ ನಾವು ವಿಷಾದಿಸುತ್ತೇವೆ. ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಮತ್ತು ನೀವು ಅಲೆ ವಿವರಗಳೊಂದಿಗೆ msdp@cdac.in ನಲ್ಲಿ ನಮಗೆ ಮೇಲ್ ಮಾಡಲು ವಿನಂತಿಸಿ."
+  
+  utter_pull_sms_error_k:
+  - text: "ಉಂಟಾದ ಅನಾನುಕೂಲತೆಗಾಗಿ ನಾವು ವಿಷಾದಿಸುತ್ತೇವೆ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಕೀವರ್ಡ್, ಐಪಿ, ಪೋರ್ಟ್ ವಿವರಗಳನ್ನು msdp@cdac.in ಗೆ ಒದಗಿಸಿ. ನಾವು ಪರಿಶೀಲಿಸುತ್ತೇವೆ ಮತ್ತು ನಿಮ್ಮನ್ನು ನವೀಕರಿಸುತ್ತೇವೆ."
+
+  utter_mobile_seva_ta:
+  - text: "மொபைல் சேவை அல்லது எஸ்எம்எஸ் சேவை என்பது மொபைல் ஆளுகைக்கான தேசிய முயற்சியாகும், இது நாட்டில் உள்ள அரசு துறைகள் மற்றும் ஏஜென்சிகள் பல்வேறு மொபைல் சேனல்களான எஸ்எம்எஸ், யுஎஸ்எஸ்டி, ஐவிஆர்எஸ் மற்றும் ஆப்ஸ் மூலம் மின்னணு சேவைகளை வழங்க உதவுகிறது."
+  
+  utter_registration_ta:
+  - text: "பதிவு செய்வதற்கு, http://services.mgov.gov.in/ என்ற இணையதளத்தில் பயனர் ஐடியை உருவாக்கி கணக்கை உருவாக்க வேண்டும், அது எம் எஸ் டி பி ஆல் அங்கீகரிக்கப்பட்டு பயனர் பதிவு செய்யப்படும்."
+  
+  utter_push_sms_ta:
+  - text: "புஷ் எஸ்எம்எஸ் சேவைகள், எஸ்எம்எஸ் மூலம் குடிமக்களுக்கு தகவல், அறிவிப்புகள், எச்சரிக்கைகள் போன்றவற்றை அனுப்ப துறைகளால் பயன்படுத்தப்படுகின்றன."
+  
+  utter_pull_sms_ta:
+  - text: "166 அல்லது 51969 அல்லது 9223166166 என்ற எண்ணை இந்திய அரசின் தொலைத்தொடர்புத் துறையால் எஸ்எம்எஸ் மூலம் கிடைக்கும் அரசுச் சேவைகளைப் பெறுவதற்காக ஒதுக்கப்பட்ட துறைகளில் இருந்து துறைசார் சேவையைப் பற்றிய தகவல்களைப் பெற, குடிமகன்கள் இழுக்க எஸ் எம் எஸ் சேவைகளைப் பயன்படுத்தலாம்."
+  
+  utter_ivrs_ta:
+  - text: "ஐவிஆர்எஸ் சேவை என்பது ஒரு விசைப்பலகை வழியாக குரல் மற்றும் டிடிஎம்எஃப் டோன்களை உள்ளீடு செய்வதன் மூலம் கணினியை மனிதர்களுடன் தொடர்பு கொள்ள அனுமதிக்கும் தொழில்நுட்பமாகும்."
+  
+  utter_ussd_ta:
+  - text: "யு எஸ் எஸ் டி என்பது ஒரு அமர்வு அடிப்படையிலான சேவையாகும், இது ஒரு ஸ்டோர் மற்றும் முன்னோக்கி சேவையாகும். ussd சேவைகள் இரண்டு வெவ்வேறு சேவை அம்சங்களுடன் வழங்கப்படுகின்றன: யு எஸ் எஸ் என், யு எஸ் எஸ் ஆர் மேலும் விவரங்களுக்கு இணைப்பைப் பார்க்கவும்: https://mgov.gov.in/msdp ussddetail.jsp"
+  
+  utter_m_appstore_ta:
+  - text: "மொபைல் அப்ளிகேஷன்ஸ் ஸ்டோர் சேவையான எம் ஆப் ஸ்டோர் சேவையானது, மொபைல் சாதனங்கள் மூலம் பொது சேவைகளை வழங்குவதற்கு பொருத்தமான பயன்பாடுகளை உருவாக்குவதற்கும் பயன்படுத்துவதற்கும் வசதியாக உருவாக்கப்பட்டது. ஸ்டோர் சேவை சார்ந்த கட்டிடக்கலை மற்றும் மேகக்கணி சார்ந்த தொழில்நுட்பங்களின் அடிப்படையில் திறந்த தரநிலைகளைப் பயன்படுத்துகிறது."
+  
+  utter_user_manual_ta:
+  - text: "பயனர் கையேடுக்கு, இணைப்பைச் சரிபார்க்கவும் https://mgov.gov.in/msdp_services usermanual.jsp ஒருங்கிணைப்பு ஆவணத்திற்கு தயவுசெய்து https://mgov.gov.in/msdp_services usermanual.jsp இணைப்பைச் சரிபார்க்கவும்"
+  
+  utter_tri_exemption_ta:
+  - text: "உங்கள் பதிவு செய்யப்பட்ட மின்னஞ்சல் முகவரி மற்றும் பயனர் ஐடியை எங்களுக்கு அனுப்பவும், அதன்படி நாங்கள் உங்களுக்கு மின்னஞ்சல் அனுப்புவோம்."
+  
+  utter_agreement_duration_ta:
+  - text: "ஒப்பந்தத்தின் காலம் அது கையெழுத்திட்ட நாளிலிருந்து 2 ஆண்டுகள் ஆகும்."
+  
+  utter_sms_rate_ta:
+  - text: "உங்கள் அனுப்புநர் ஐடி மற்றும் பதிவு செய்யப்பட்ட மின்னஞ்சல் ஐடியை எங்களுக்கு அனுப்புமாறு கேட்டுக்கொள்கிறோம், நாங்கள் உங்களுக்கு விவரங்களை அனுப்புவோம். 30 நாட்களுக்கு முன்னர் ஏதேனும் கட்டண மாற்றங்கள் குறித்து அஞ்சல் மூலம் உங்களுக்கு அறிவிப்போம்."
+  
+  utter_short_code_ta:
+  - text: "குறுகிய குறியீடுகள் அல்லது குறுகிய எண்கள், மல்டிமீடியா செய்தியிடல் அமைப்பு மற்றும் மொபைல் நெட்வொர்க் ஆபரேட்டர்களின் குறுஞ்செய்தி சேவை அமைப்புகளில் செய்திகளை அனுப்பப் பயன்படுத்தப்படும் தொலைபேசி எண்களைக் காட்டிலும் சிறிய இலக்க வரிசைகள் ஆகும். செய்தியிடலுடன் கூடுதலாக, அவை சுருக்கமான டயலிங்கிலும் பயன்படுத்தப்படலாம்."
+
+  utter_long_code_ta:
+  - text: "பிரத்யேக தொலைபேசி எண் அல்லது பெரிய எண் அல்லது மெய்நிகர் மொபைல் எண் என்றும் அழைக்கப்படும் நீண்ட குறியீடு எஸ்எம்எஸ் சேவைகள் குரல் அழைப்புகள் மற்றும் எஸ்எம்எஸ் செய்திகளைப் பெற வணிகத்தால் பயன்படுத்தப்படும் வரவேற்பு பொறிமுறையாகும்."
+    
+  utter_long_short_numbers_ta:
+  - text: "நீண்ட குறியீடு எண் 9223166166 மற்றும் குறுகிய குறியீடு எண் 166, 51969"
+  
+  utter_sms_limit_ta:
+  - text: "எஸ்எம்எஸ்களுக்கு குறிப்பிட்ட தினசரி வரம்புகள் எதுவும் இல்லை, இருப்பினும் முதலில் 100 எஸ்எம்எஸ்கள் பதிவுசெய்யப்பட்ட யூசர்ஐடியில் ஒதுக்கப்படும், இது பின்வரும் படிகளின் மூலம் அதிகரிக்கலாம் https://services.mgov.gov.in இல் உள்நுழைந்து பின்னர் கணக்கை நிர்வகிப்பதற்குச் சென்று கணக்கைப் புதுப்பிப்பதற்குச் செல்லவும். பின்னர் தினசரி எஸ்எம்எஸ் வரம்புக்குச் சென்று புதுப்பிக்கவும்"
+  
+  utter_threshold_balance_ta:
+  - text: "கணக்கு இருப்பு குறைந்தபட்சம் தாண்டும் போது அறிவிப்பைப் பெறுவதற்கான த்ரெஷோல்ட் எச்சரிக்கை. மொபைல் சேவை குறைந்தபட்ச வரம்பு 10000 எஸ்எம்எஸ்களை வழங்குகிறது. அதை அதிகரிக்க துறை msdp@cdac.in என்ற மின்னஞ்சல் முகவரிக்கு அனுப்ப வேண்டும்."
+  
+  utter_various_sms_ta:
+  - text: "போர்ட்டலைப் பயன்படுத்தி ஒருவர் 3 வகையான எஸ்எம்எஸ்களை அனுப்பலாம்: ஒரு தனி நபருக்கு எஸ்எம்எஸ் அனுப்ப வேண்டியிருக்கும் போது விரைவான எஸ்எம்எஸ். குழு வாரியாக எஸ்எம்எஸ் அனுப்ப வேண்டியிருக்கும் போது குழு எஸ்எம்எஸ். பில்க் எஸ்எம்எஸ் இந்த எஸ்எம்எஸ் பயன்முறை எக்செல் கோப்பு வழியாக அனுப்பப்படுகிறது."
+  
+  utter_group_ta:
+  - text: "முதலில் https://services.mgov.gov.in இல் உள்நுழைந்து குழு அமைப்பிற்குச் சென்று குழுவைச் சேர்க்கவும் பின்னர் குழுவின் பெயரை உள்ளிட்டு சேர் ஐகானைக் கிளிக் செய்யவும்."
+  
+  utter_secure_key_ta:
+  - text: "பாதுகாப்பான விசை பொதுவாக கடவுச்சொல் அல்லது எண்ணெழுத்து விசையைக் குறிக்கிறது ஒரு பாதுகாப்பு விசை என்பது உள்ளூர் நெட்வொர்க்கைப் பாதுகாக்க உதவும் குறிப்பிட்ட பாதுகாப்பு நெறிமுறைக்கான ஆதாரமாகும். பிணைய பாதுகாப்பு விசை பிணைய முகவரிகளைத் தீர்மானிக்கப் பயன்படுத்தப்படும் பிற பிணைய விசைகளிலிருந்து வேறுபடுகிறது. தலைமுறைக்கு https://services.mgov.gov.in இல் உள்நுழைந்து, கணக்கை நிர்வகிப்பதற்குச் சென்று, பின்னர் விசையை உருவாக்கவும். உங்கள் பதிவு செய்யப்பட்ட மொபைலுக்கு ஒரு ஓ டி பி அனுப்பப்படும், அதை உள்ளிட்டு சமர்ப்பி என்பதைக் கிளிக் செய்யவும்."
+  
+  utter_ssl_error_ta:
+  - text: "எஸ் எஸ் எல் இணைப்புப் பிழைகள் நீங்கள் ssl இயக்கப்பட்ட இணையதளத்துடன் இணைக்க முயலும்போது, அந்த இணையதளத்தின் சர்வரில் பாதுகாப்பான இணைப்பைத் துறையால் ஏற்படுத்த முடியவில்லை. அதைச் சரிசெய்ய, தயவுசெய்து உங்கள் பயன்பாட்டில் ssl குறியீட்டைச் செயல்படுத்தவும். மாதிரி அல்லது படிகளுக்கு https://mgov.gov.in/msdp techarticle.jsp ஐப் பார்க்கவும்"
+  
+  utter_performa_invoice_ta:
+  - text: "https://services.mgov.gov.in இல் செயல்திறன் விலைப்பட்டியல் உள்நுழைவை உருவாக்க, பின்னர் பில் விவரங்களுக்குச் சென்று, பிறகு வருடாந்திர பராமரிப்பு செலவுக்கான செயல்திறனை உருவாக்கவும், https://services.mgov.gov.in/ இல் உள்நுழையவும், பின்னர் பில் விவரங்களுக்குச் சென்று பின்னர் உருவாக்கவும் ஏஎம்சி அறிக்கை."
+  
+  utter_utilization_report_ta:
+  - text: " பயன்பாட்டு அறிக்கை அல்லது பயன்பாட்டு அறிக்கை நிறுவனங்களின் வளங்கள் எப்படி, எங்கே, எவ்வளவு பயன்படுத்தப்படுகின்றன என்பது குறித்த தகவல் வழங்குகிறது. https://services.mgov.gov.in இல் உள்நுழைந்து, கோடைக்கால அறிக்கைக்குச் செல்லவும், அதன் கீழ் உங்கள் அனைத்து எஸ்எம்எஸ் பயன்பாடுகளையும் மாதம் மற்றும் நாள் வாரியாகப் பெறுவீர்கள். எதிர்கால குறிப்புக்காக நீங்கள் அதை பதிவிறக்கம் செய்யலாம்."
+  
+  utter_balance_transfer_ta:
+  - text: "எஸ்எம்எஸ் இருப்பை மாற்ற, பின்வரும் படிகளைச் செய்யவும்: https://services.mgov.gov.in இல் உள்நுழைந்து, கணக்கை நிர்வகிப்பதற்குச் சென்று, சமநிலைப் பரிமாற்றம் கீழ்தோன்றும் மெனுவிலிருந்து துணைக் கணக்கைத் தேர்ந்தெடுத்து, அந்தந்த புலங்களை நிரப்பி, பரிமாற்றத்தைக் கிளிக் செய்யவும் பொத்தானை."
+  
+  utter_sender_id_ta:
+  - text: "அனுப்புநர் ஐடி துறையால் தேர்ந்தெடுக்கப்பட்டது. எஸ்எம்எஸ் அனுப்ப அனுப்புநர் ஐடி பயன்படுத்தப்படுகிறது. அனுப்புநர் ஐடி 6 எழுத்துக்களைக் கொண்டிருக்க வேண்டும்."
+  
+  utter_payment_receipt_ta:
+  - text: "கட்டண ரசீதை உருவாக்க, தயவுசெய்து இந்த படிகளைப் பின்பற்றவும்: https://services.mgov.gov.in இல் உள்நுழைந்து, பின்னர் பில் விவரங்களுக்குச் சென்று, கட்டண வரலாற்றிற்குச் சென்று, பதிவிறக்க அரோவைக் கிளிக் செய்யவும். உங்கள் கட்டண ரசீது பதிவிறக்கப்படும்."
+  
+  utter_connection_time_out_ta:
+  - text: "ஏற்பட்ட சிரமத்திற்கு வருந்துகிறோம். உங்கள் சர்வரிலிருந்து டெல்நெட்டை எங்கள் ஐபி மற்றும் போர்ட்டிற்குச் சரிபார்க்கும்படி கேட்டுக்கொள்கிறோம்; குறியீடு ssl சான்றிதழ் சரியாக செயல்படுத்தப்பட்டதா இல்லையா என்பதை நீங்கள் சரிபார்க்க வேண்டும்."
+  
+  utter_ip_white_list_ta:
+  - text: "ஏற்பட்ட சிரமத்திற்கு வருந்துகிறோம். உங்கள் விண்ணப்பத்தின் பொது ஐபி முகவரியை எங்கள் மின்னஞ்சல் ஐடி msdp@cdac.in க்கு அனுப்புமாறு கேட்டுக்கொள்கிறோம். நாங்கள் உங்களை தொலைபேசி மற்றும் மின்னஞ்சல் மூலம் தொடர்புகொள்வோம்."
+  
+  utter_data_upload_fail_ta:
+  - text: "ஏற்பட்ட சிரமத்திற்கு வருந்துகிறோம். கோப்பு அளவு, வடிவம் மற்றும் எக்செல் கோப்பை சரிபார்க்கவும். மேலும், கோப்பை பதிவேற்றிய பின் குரல் குறியீடு வெற்றிகரமாக உருவாக்கப்பட்டுள்ளதா என்பதைச் சரிபார்க்கும்படி கேட்டுக்கொள்கிறேன்."
+  
+  utter_sms_length_ta:
+  - text: "ஆங்கிலத்தில் ஒரு உரை எஸ்எம்எஸ் நீளம் 160 எழுத்துகள். மற்ற மொழிகளுக்கு 70 எழுத்துகள். மேலும் விவரங்களுக்கு https://services.mgov.gov.in/ smscalculator.jsp ஐப் பார்க்கவும்"
+  
+  utter_login_fail_ta:
+  - text: "ஏற்பட்ட சிரமத்திற்கு வருந்துகிறோம். திரைக்காட்சியுடன் msdp@cdac.in இல் எங்களுக்கு மின்னஞ்சல் அனுப்புமாறு கேட்டுக்கொள்கிறேன். உங்கள் கடவுச்சொல்லை மீட்டமைக்கவும் முடியும். மேலும், எங்கள் கடவுச்சொல் கொள்கையை சரிபார்க்கவும்"
+  
+  utter_access_fail_ta:
+  - text: "ஏற்பட்ட சிரமத்திற்கு வருந்துகிறோம். ஸ்கிரீன்ஷாட் மற்றும் யு ஆர் எல் விவரங்களுடன் msdp@cdac.in இல் எங்களுக்கு மின்னஞ்சல் அனுப்புமாறு கேட்டுக்கொள்கிறேன்."
+  
+  utter_pull_sms_error_ta:
+  - text: "ஏற்பட்ட சிரமத்திற்கு வருந்துகிறோம். msdp@cdac.in க்கு உங்கள் முக்கிய வார்த்தை, ஐபி, போர்ட் விவரங்களை வழங்கவும். நாங்கள் சரிபார்த்து உங்களை புதுப்பிப்போம்."
+
+  utter_mobile_seva_te:
+  - text: "మొబైల్ సేవ లేదా ఇ ఎస్ ఎం ఎస్ సేవ అనేది మొబైల్ గవర్నెన్స్‌పై జాతీయ చొరవ, ఇది దేశంలోని ప్రభుత్వ విభాగాలు మరియు ఏజెన్సీలు వివిధ మొబైల్ ఛానెల్‌లు అంటే ఎస్ ఎం ఎస్, యు ఎస్ ఎస్ డి, ఐ వి ఆర్ ఎస్ మరియు మరియు యాప్‌ల ద్వారా ఎలక్ట్రానిక్ సేవలను అందించడానికి వీలు కల్పిస్తుంది."
+
+  utter_registration_te:
+  - text: "నమోదు చేయడానికి, http://services.mgov.gov.in/ లో ఎం ఎస్ డి పి ద్వారా ఆమోదించబడిన వినియోగదారు ఐడితో ఖాతాని సృష్టించాలి మరియు వినియోగదారు నమోదు చేసుకోవాలి."
+  
+  utter_push_sms_te:
+  - text: "ఎస్ ఎం ఎస్ ద్వారా పౌరులకు సమాచారం, నోటిఫికేషన్‌లు, హెచ్చరికలు మొదలైనవాటిని పంపడానికి శాఖలు పుష్ ఎస్ ఎం ఎస్ సేవలను ఉపయోగిస్తాయి."
+  
+  utter_pull_sms_te:
+  - text: "ఎస్ ఎం ఎస్ ద్వారా అందుబాటులో ఉన్న ప్రభుత్వ సేవలను పొందేందుకు భారత ప్రభుత్వం టెలికమ్యూనికేషన్ శాఖ ద్వారా కేటాయించబడిన శాఖల షార్ట్ కోడ్ 166 లేదా 51969 లేదా 9223166166 నుండి డిపార్ట్‌మెంటల్ సర్వీస్‌కు సంబంధించిన సమాచారాన్ని పొందడానికి పౌరులు పుల్ ఎస్ ఎం ఎస్ సేవలను ఉపయోగించవచ్చు."
+  
+  utter_ivrs_te:
+  - text: "ఐ వి ఆర్ ఎస్ సేవ అనేది కీప్యాడ్ ద్వారా వాయిస్ మరియు డి టి ఎమ్ ఎఫ్ టోన్‌ల ఇన్‌పుట్‌ని ఉపయోగించడం ద్వారా కంప్యూటర్‌ను మానవులతో ఇంటరాక్ట్ చేయడానికి అనుమతించే సాంకేతికత."
+  
+  utter_ussd_te:
+  - text: "యు ఎస్ ఎస్ డి అనేది స్టోర్ మరియు ఫార్వార్డ్ సేవ అయిన ఎస్ ఎం ఎస్ కాకుండా సెషన్ ఆధారిత సేవ. యు ఎస్ ఎస్ డి సేవలు రెండు విభిన్న సేవా లక్షణాలతో అందించబడ్డాయి: యు ఎస్ ఎస్ ఎన్, యు ఎస్ ఎస్ ఆర్ మరియు మరిన్ని వివరాల కోసం దయచేసి లింక్‌ని తనిఖీ చేయండి: https://mgov.gov.in/msdp ussddetail.jsp"
+  
+  utter_m_appstore_te:
+  - text: "ఎం యాప్ స్టోర్ సేవ అంటే మొబైల్ అప్లికేషన్స్ స్టోర్ సర్వీస్ మొబైల్ పరికరాల ద్వారా పబ్లిక్ సర్వీస్‌లను డెలివరీ చేయడానికి తగిన అప్లికేషన్‌ల అభివృద్ధి మరియు విస్తరణను సులభతరం చేయడానికి సృష్టించబడింది. స్టోర్ సర్వీస్ ఓరియెంటెడ్ ఆర్కిటెక్చర్ మరియు క్లౌడ్ బేస్డ్ టెక్నాలజీల ఆధారంగా ఓపెన్ స్టాండర్డ్‌లను ఆచరణాత్మకంగా ఉపయోగిస్తుంది."
+  
+  utter_user_manual_te:
+  - text: "వినియోగదారు మాన్యువల్ కోసం దయచేసి లింక్‌ను తనిఖీ చేయండి https://mgov.gov.in/msdp_services usermanual.jsp ఇంటిగ్రేషన్ డాక్యుమెంట్ కోసం దయచేసి లింక్‌ని తనిఖీ చేయండి https://mgov.gov.in/msdp_services usermanual.jsp"
+  
+  utter_tri_exemption_te:
+  - text: "దయచేసి మీ నమోదిత ఇమెయిల్‌యిడ్ మరియు వినియోగదారు ఐడిని మాకు పంపండి, మేము మీకు తదనుగుణంగా మెయిల్ చేస్తాము."
+  
+  utter_agreement_duration_te:
+  - text: "ఒప్పందం యొక్క వ్యవధి సంతకం చేసిన తేదీ నుండి 2 సంవత్సరాలు."
+  
+  utter_sms_rate_te:
+  - text: "మీ పంపినవారి ఐడి మరియు రిజిస్టర్డ్ ఇమెయిల్ ఐడిని మాకు పంపమని మేము మిమ్మల్ని అభ్యర్థిస్తున్నాము, మేము మీకు వివరాలను మెయిల్ చేస్తాము. ఏదైనా రేటు మార్పులకు సంబంధించి 30 రోజుల ముందు మేము మీకు మెయిల్ ద్వారా తెలియజేస్తాము."
+  
+  utter_short_code_te:
+  - text: "సంక్షిప్త కోడ్‌లు లేదా సంక్షిప్త సంఖ్యలు, మొబైల్ నెట్‌వర్క్ ఆపరేటర్‌ల యొక్క మల్టీమీడియా మెసేజింగ్ సిస్టమ్ మరియు సంక్షిప్త సందేశ సేవా వ్యవస్థలలో సందేశాలను పరిష్కరించడానికి ఉపయోగించే టెలిఫోన్ నంబర్‌ల కంటే చాలా చిన్న అంకెల సీక్వెన్సులు. సందేశంతో పాటు, వాటిని సంక్షిప్త డయలింగ్‌లో ఉపయోగించవచ్చు."
+
+  utter_long_code_te:
+  - text: "లాంగ్ కోడ్ ఎస్ ఎం ఎస్ సేవలను అంకితమైన ఫోన్ నంబర్ లేదా పెద్ద నంబర్ లేదా వర్చువల్ మొబైల్ నంబర్ అని కూడా పిలుస్తారు, వాయిస్ కాల్‌లు మరియు ఎస్ ఎం ఎస్ సందేశాలను స్వీకరించడానికి వ్యాపారం ఉపయోగించే రిసెప్షన్ మెకానిజం."
+    
+  utter_long_short_numbers_te:
+  - text: "లాంగ్ కోడ్ నంబర్ 9223166166 మరియు షార్ట్ కోడ్ నంబర్ 166, 51969"
+  
+  utter_sms_limit_te:
+  - text: "ఎస్ ఎం ఎస్ లకు నిర్దిష్ట రోజువారీ పరిమితి లేదు, అయితే మొదట్లో 100 ఎస్ ఎం ఎస్ లు నమోదు చేయబడిన వినియోగదారుని గుర్తింపు లో కేటాయించబడతాయి, వీటిని క్రింది దశల ద్వారా పెంచవచ్చు https://services.mgov.gov.inలో లాగిన్ చేసి ఆపై ఖాతాను నిర్వహించండి ఆపై ఖాతాను నవీకరించడానికి వెళ్లండి ఆపై రోజువారీ ఎస్ ఎం ఎస్ పరిమితికి వెళ్లి, ఆపై నవీకరించండి"
+  
+  utter_threshold_balance_te:
+  - text: "ఖాతా బ్యాలెన్స్ కనిష్ట స్థాయిని దాటినప్పుడు నోటిఫికేషన్‌ను స్వీకరించడానికి థ్రెషోల్డ్ అలర్ట్. మొబైల్ సేవ కనీస థ్రెషోల్డ్ 10000 ఎస్ ఎం ఎస్ లను అందిస్తుంది. దానిని పెంచడానికి శాఖ msdp@cdac.inకి మెయిల్ చేయాలి."
+  
+  utter_various_sms_te:
+  - text: "పోర్టల్‌ని ఉపయోగించడం ద్వారా ఒకరు 3 రకాల ఎస్ ఎం ఎస్ లను పంపవచ్చు: ఒక వ్యక్తికి ఎస్ ఎం ఎస్ పంపవలసి వచ్చినప్పుడు శీఘ్ర ఎస్ ఎం ఎస్. గ్రూప్ వారీగా ఎస్ ఎం ఎస్ పంపవలసి వచ్చినప్పుడు గ్రూప్ ఎస్ ఎం ఎస్. చాలా మొత్తం ఎస్ ఎం ఎస్ ఈ ఎస్ ఎం ఎస్ మోడ్ ఎక్సెల్ ఫైల్ ద్వారా పంపబడుతుంది."
+  
+  utter_group_te:
+  - text: "ముందుగా https://services.mgov.gov.inలో లాగిన్ చేసి, గ్రూప్ సెట్టింగ్‌కి వెళ్లి, గ్రూప్‌ను యాడ్ చేసి, గ్రూప్ పేరును ఎంటర్ చేసి, యాడ్ ఐకాన్‌పై క్లిక్ చేయండి."
+  
+  utter_secure_key_te:
+  - text: "సురక్షిత కీ సాధారణంగా లోకల్ ఏరియా నెట్‌వర్క్‌ని యాక్సెస్ చేయడానికి తుది వినియోగదారులు నమోదు చేసే పాస్‌వర్డ్ లేదా ఆల్ఫాన్యూమరిక్ కీని సూచిస్తుంది. ఒక సెక్యూరిటీ కీ ఒక నిర్దిష్ట సెక్యూరిటీ ప్రోటోకాల్‌కు ఒక వనరు, ఇది స్థానిక నెట్‌వర్క్‌ను భద్రపరచడంలో సహాయపడుతుంది. నెట్‌వర్క్ సెక్యూరిటీ కీ నెట్‌వర్క్ చిరునామాలను గుర్తించడానికి ఉపయోగించే ఇతర నెట్‌వర్క్ కీల నుండి భిన్నంగా ఉంటుంది. జనరేషన్ కోసం https://services.mgov.gov.in లో లాగిన్ అయ్యి, ఖాతాను మేనేజ్ చేయడానికి వెళ్లి ఆపై కీని రూపొందించండి. మీ రిజిస్టర్డ్ మొబైల్‌కి ఓటీపీ పంపబడుతుంది, దాన్ని ఎంటర్ చేసి సబ్‌మిట్‌పై క్లిక్ చేయండి."
+  
+  utter_ssl_error_te:
+  - text: "మీరు ఎస్ ఎస్ ఎల్ ఎనేబుల్ చేయబడిన వెబ్‌సైట్‌కి కనెక్ట్ చేయడానికి ప్రయత్నిస్తున్నప్పుడు ఎస్ ఎస్ ఎల్ కనెక్షన్ లోపాలు సంభవిస్తాయి మరియు డిపార్ట్‌మెంట్ వెబ్‌సైట్ సర్వర్‌కి సురక్షిత కనెక్షన్‌ని పొందలేకపోయింది. సరిదిద్దడానికి, దయచేసి మీ అప్లికేషన్‌లో ఎస్ ఎస్ ఎల్ కోడ్‌ని అమలు చేయండి. నమూనా లేదా దశల కోసం దయచేసి https://mgov.gov.in/msdp_techarticle.jsp ని చూడండి"
+  
+  utter_performa_invoice_te:
+  - text: "https://services.mgov.gov.inలో పనితీరు ఇన్‌వాయిస్ లాగిన్‌ని రూపొందించడం కోసం, ఆపై బిల్లు వివరాలకు వెళ్లి ఆపై వార్షిక నిర్వహణ ఖర్చుల కోసం పనితీరును రూపొందించండి ఎ ఎం సి నివేదిక."
+  
+  utter_utilization_report_te:
+  - text: " వినియోగ నివేదిక లేదా వినియోగ నివేదిక సంస్థలు తమ వనరులు ఎలా, ఎక్కడ మరియు ఎంత ఉపయోగించబడుతున్నాయి అనే సమాచారాన్ని అందిస్తుంది. https://services.mgov.gov.in లో లాగిన్ చేసి, సమ్మరీ రిపోర్ట్‌కి వెళ్లండి, దాని కింద మీరు నెలవారీగా మరియు రోజు వారీగా మీ అన్ని ఎస్ ఎం ఎస్ వినియోగాలను పొందుతారు. మీరు భవిష్యత్తు సూచన కోసం కూడా అదే డౌన్‌లోడ్ చేసుకోవచ్చు."
+  
+  utter_balance_transfer_te:
+  - text: "ఎస్ ఎం ఎస్ బ్యాలెన్స్‌ని బదిలీ చేయడానికి దయచేసి క్రింది దశలను చేయండి: https://services.mgov.gov.inలో లాగిన్ చేసి, ఆపై ఖాతాను నిర్వహించండి ఆపై బ్యాలెన్స్ బదిలీకి వెళ్లి డ్రాప్ డౌన్ మెను నుండి ఉప ఖాతాను ఎంచుకోండి, సంబంధిత ఫీల్డ్‌లను పూరించండి మరియు బదిలీపై క్లిక్ చేయండి బటన్."
+  
+  utter_sender_id_te:
+  - text: "పంపేవారి ఐ డి విభాగం ద్వారా ఎంపిక చేయబడుతుంది. ఎస్ ఎం ఎస్ పంపడానికి పంపినవారి ఐ డి ఉపయోగించబడుతుంది. పంపినవారి ఐ డి తప్పనిసరిగా 6 వర్ణమాలలు కలిగి ఉండాలి."
+  
+  utter_payment_receipt_te:
+  - text: "చెల్లింపు రసీదుని రూపొందించడానికి దయచేసి ఈ దశలను అనుసరించండి: https://services.mgov.gov.inలో లాగిన్ చేసి, ఆపై బిల్లు వివరాలకు వెళ్లి చెల్లింపు చరిత్రకు వెళ్లి డౌన్‌లోడ్ బాణంపై క్లిక్ చేయండి. మీ చెల్లింపు రసీదు డౌన్‌లోడ్ చేయబడుతుంది."
+  
+  utter_connection_time_out_te:
+  - text: "మేము కలిగించిన అసౌకర్యానికి చింతిస్తున్నాము. మీ సర్వర్ నుండి మా ఐ పి మరియు పోర్ట్‌కి టెల్‌నెట్‌ని తనిఖీ చేయమని మేము మిమ్మల్ని అభ్యర్థిస్తున్నాము; కోడ్ ఎస్ ఎస్ ఎల్ సర్టిఫికేట్ సరిగ్గా అమలు చేయబడిందో లేదో కూడా మీరు తనిఖీ చేయాలి."
+  
+  utter_ip_white_list_te:
+  - text: "మేము కలిగించిన అసౌకర్యానికి చింతిస్తున్నాము. మీ అప్లికేషన్ పబ్లిక్ ఐ పి చిరునామాను మా ఇమెయిల్ ఐడి msdp@cdac.in కి పంపమని మేము మిమ్మల్ని అభ్యర్థిస్తున్నాము. మేము మిమ్మల్ని ఫోన్ మరియు ఇమెయిల్ ద్వారా సంప్రదిస్తాము."
+  
+  utter_data_upload_fail_te:
+  - text: "మేము కలిగించిన అసౌకర్యానికి చింతిస్తున్నాము. దయచేసి ఫైల్ పరిమాణం, ఫార్మాట్ మరియు ఎక్సెల్ ఫైల్‌ను తనిఖీ చేయండి. అలాగే, ఫైల్‌ను అప్‌లోడ్ చేసిన తర్వాత వాయిస్ కోడ్ విజయవంతంగా రూపొందించబడిందో లేదో తనిఖీ చేయమని మిమ్మల్ని అభ్యర్థించండి."
+  
+  utter_sms_length_te:
+  - text: "ఇంగ్లీషులో ప్రతి టెక్స్ట్ ఎస్ ఎం ఎస్ పొడవు 160 అక్షరాలు. ఇతర భాషలకు 70 అక్షరాలు. మరిన్ని వివరాల కోసం దయచేసి https://services.mgov.gov.in/smscalculator.jsp ని తనిఖీ చేయండి"
+  
+  utter_login_fail_te:
+  - text: "మేము కలిగించిన అసౌకర్యానికి చింతిస్తున్నాము. స్క్రీన్‌షాట్‌తో msdp@cdac.in లో మాకు మెయిల్ చేయమని అభ్యర్థించండి. మీరు మీ పాస్‌వర్డ్‌ని కూడా రీసెట్ చేయవచ్చు. అలాగే, దయచేసి మా పాస్‌వర్డ్ విధానాన్ని తనిఖీ చేయండి"
+  
+  utter_access_fail_te:
+  - text: "మేము కలిగించిన అసౌకర్యానికి చింతిస్తున్నాము. స్క్రీన్‌షాట్ మరియు యు ఆర్ ఎల్ వివరాలతో msdp@cdac.in లో మాకు మెయిల్ చేయమని అభ్యర్థించండి."
+  
+  utter_pull_sms_error_te:
+  - text: "మేము కలిగించిన అసౌకర్యానికి చింతిస్తున్నాము. దయచేసి మీ కీవర్డ్, ఐ పి, పోర్ట్ వివరాలను msdp@cdac.in కి అందించండి. మేము తనిఖీ చేసి మిమ్మల్ని అప్‌డేట్ చేస్తాము."
+
+  # utter_default:
+  # - text: "Sorry I didn't understand. Please Try Again! or contact helpdesk 88747988777"
+
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase or contact helpdesk 88747988777?
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
